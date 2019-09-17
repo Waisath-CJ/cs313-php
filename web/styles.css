@@ -1,0 +1,11 @@
+/* File: styles.css */
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Ubuntu, sans-serif;
+}
+
+#wrapper {
+	margin: auto;
+	background-color: lightgray;
+}
