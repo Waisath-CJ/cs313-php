@@ -9,13 +9,10 @@
 		<h1>PHP In-Class Team Activity</h1>
 		<?php
 			for ($i = 1; $i <= 10; $i++) {
-				$div = "<div";
-				if ($i % 2 == 0) {
-					$div += " style='color: red'";
-				}
-				$div += ">$i</div>";
-
-				echo $div;
+				if ($i % 2 == 0) 
+					echo "<div style='background-color: red'>$i</div>";
+				else
+					echo "<div>$i</div>";
 			}
 		?>
 	</body>
