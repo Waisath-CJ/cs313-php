@@ -17,14 +17,20 @@ body {
 #div1 {
 	background-color: green;
 	font-size: 20px;
+	width: 200px;
+	height: 200px;
 }
 
 #div2 {
 	background-color: yellow;
 	font-size: 15px;
+	width: 200px;
+	height: 200px;
 }
 
 #div3 {
 	background-color: red;
 	font-size: 10px;
+	width: 200px;
+	height: 200px;
 }
