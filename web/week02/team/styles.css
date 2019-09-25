@@ -35,6 +35,6 @@ body {
 	height: 200px;
 }
 
-#div1:hover, #div2:hover, #div3:hover {
+div.bold:hover {
 	font-style: bold;
 }
