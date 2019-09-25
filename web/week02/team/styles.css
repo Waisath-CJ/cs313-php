@@ -9,32 +9,43 @@ body {
 
 #wrapper {
 	margin: auto;
-	padding: 5px;
+	padding: 10px;
 	width: 750px;
 	background-color: white;
 }
 
+h1 {
+    text-align: center;
+    font-size: 40px;
+}
+
 #div1 {
+    margin: 5px;
+    padding: 5px;
 	background-color: green;
-	font-size: 20px;
-	width: 200px;
+	font-size: 30px;
+	max-width: 200px;
 	height: 200px;
 }
 
 #div2 {
+    margin: 5px; 
+    padding: 5px;
 	background-color: yellow;
-	font-size: 15px;
-	width: 200px;
+	font-size: 30px;
+	max-width: 200px;
 	height: 200px;
 }
 
 #div3 {
+    margin: 5px;
+    padding: 5px;
 	background-color: red;
-	font-size: 10px;
-	width: 200px;
+	font-size: 30px;
+	max-width: 200px;
 	height: 200px;
 }
 
 .bold:hover {
-	font-style: bold;
+	font-weight: bold;
 }
