@@ -2,13 +2,13 @@
 	echo "<h1>CJ Waisath's Website</h1>";
 	echo '<ul class="nav">
 				<li class="nav-item">
-					<a class="nav-link" href="#">Home</a>
+					<a class="nav-link" href="index.php">Home</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#">About Me</a>
+					<a class="nav-link" href="about.php">About Me</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#">Assignments</a>
+					<a class="nav-link" href="assignments.php">Assignments</a>
 				</li>
 			</ul>';
 ?>
