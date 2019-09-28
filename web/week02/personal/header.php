@@ -1,7 +1,7 @@
 <?php
 	echo "<header>";
 	echo "<h1>CJ Waisath's Website</h1>";
-	echo '<ul class="nav">
+	echo '<ul class="nav justify-content-center">
 				<li class="nav-item">
 					<a class="nav-link" href="index.php">Home</a>
 				</li>
