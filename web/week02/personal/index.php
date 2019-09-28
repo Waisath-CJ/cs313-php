@@ -18,7 +18,7 @@
 		<div id="wrapper">
 			<?php include "header.php"; ?>
 
-			<p>How neat is that?</p>
+			<img src="backflip.jpg" alt="Me doing a backflip" id="homeImg">
 
 			<?php include "footer.php"; ?>
 		</div>
