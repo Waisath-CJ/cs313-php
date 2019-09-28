@@ -18,7 +18,7 @@
 		<div id="wrapper">
 			<?php include "header.php"; ?>
 
-			<p>How neat is that?</p>
+			<h1>Coming soon! Stay tuned!</h1>
 
 			<?php include "footer.php"; ?>
 		</div>
