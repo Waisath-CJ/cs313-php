@@ -19,6 +19,8 @@
 			<?php include "header.php"; ?>
 
 			<p>How neat is that?</p>
+
+			<?php include "footer.php"; ?>
 		</div>
 	</body>
 </html>
