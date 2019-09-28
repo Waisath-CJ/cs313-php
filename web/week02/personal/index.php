@@ -15,7 +15,10 @@
 	</head>
 	
 	<body>
-		<?php include "header.php"; ?>
-		
+		<div id="wrapper">
+			<?php include "header.php"; ?>
+
+			<p>How neat is that?</p>
+		</div>
 	</body>
 </html>

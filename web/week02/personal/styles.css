@@ -1,7 +1,18 @@
 /* File: styles.css */
 
 /* Universal Styles */
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Ubuntu, Arial, sans-serif;
+	background-color: lightgray;
+}
 
+#wrapper {
+	margin: auto;
+	padding: 5px;
+	background-color: white;
+}
 
 /* Home Specific Styles */
 
