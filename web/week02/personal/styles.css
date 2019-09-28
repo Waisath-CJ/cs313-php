@@ -23,11 +23,12 @@ ul {
 }
 
 a, a:visited {
-	color: lightgray;
+	color: yellow;
+	opacity: 75%;
 }
 
 a:hover, a:active {
-	color: white;
+	color: yellow;
 }
 
 h1 {
