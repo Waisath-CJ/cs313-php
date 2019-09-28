@@ -20,6 +20,8 @@
 
 			<img src="backflip.jpg" alt="Me doing a backflip" id="homeImg">
 
+			<p id="homeDescrip">This is flippin' awesome huh? Come check out my assignments or learn a little more about me. It's up to you!</p>
+
 			<?php include "footer.php"; ?>
 		</div>
 	</body>
