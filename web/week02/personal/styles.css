@@ -15,9 +15,18 @@ body {
 	width: 1000px;
 }
 
-nav {
+ul {
 	margin: auto;
 	width: 1000px;
+	background-color: black;
+}
+
+a, a:visited {
+	color: lightgray;
+}
+
+a:hover, a:active {
+	color: white;
 }
 
 /* Home Specific Styles */
