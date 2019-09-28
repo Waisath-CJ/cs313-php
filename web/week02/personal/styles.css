@@ -23,8 +23,7 @@ ul {
 }
 
 a, a:visited {
-	color: yellow;
-	opacity: 25%;
+	color: lightgray;
 }
 
 a:hover, a:active {
