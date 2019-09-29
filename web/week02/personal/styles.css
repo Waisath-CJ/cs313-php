@@ -60,16 +60,10 @@ footer {
 	margin: auto;
 	width: 50%;
 	height: 50%;
-	float: left;
 }
 
 #aboutDescrip {
 	font-size: 16px;
-	float: right;
-}
-
-footer {
-	float: clear;
 }
 
 /* Assignments Specific Styles */
