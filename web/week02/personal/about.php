@@ -18,7 +18,8 @@
 		<div id="wrapper">
 			<?php include "header.php"; ?>
 
-			<p>How neat is that?</p>
+			<img src="profile.jpg" alt="Picture of myself" id="aboutImg">
+			<p>Hey everyone! My name is CJ Waisath and I'm a Software Engineering student at BYU-Idaho. This is my 10th semester of college and I'm excited to be so close to graduation! I'm from Mesa, AZ and I'm not a fan of Rexburg's winters. I love soccer, spikeball, volleyball, and ultimate frisbee, and I just love to be outdoors. I also really love music. I play piano, guitar, ukulele, drums, and I sing. That's a little bit about me for y'all!</p>
 
 			<?php include "footer.php"; ?>
 		</div>
