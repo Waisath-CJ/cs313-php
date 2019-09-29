@@ -48,7 +48,6 @@ footer {
 	padding: 5px;
 	width: 50%;
 	height: 50%;
-	text-align: center;
 }
 
 #homeDescrip {
@@ -56,7 +55,22 @@ footer {
 }
 
 /* About Me Specific Styles */
+#aboutImg {
+	padding: 5px;
+	margin: auto;
+	width: 50%;
+	height: 50%;
+	float: left;
+}
 
+#aboutDescrip {
+	font-size: 16px;
+	float: right;
+}
+
+footer {
+	float: clear;
+}
 
 /* Assignments Specific Styles */
 
