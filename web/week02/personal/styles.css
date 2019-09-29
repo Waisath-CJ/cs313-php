@@ -52,6 +52,7 @@ footer {
 
 #homeDescrip {
 	font-size: 16px;
+	padding: 5px;
 }
 
 /* About Me Specific Styles */
@@ -64,6 +65,7 @@ footer {
 
 #aboutDescrip {
 	font-size: 16px;
+	padding: 5px;
 }
 
 /* Assignments Specific Styles */
