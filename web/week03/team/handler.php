@@ -7,9 +7,9 @@
 	
 	<body>
 		<div id="wrapper">
-			<?php
-				
-			?>			
+			<p>Your name is: <?php echo $_POST["name"]; ?></p>
+			<p>Your email is: <a href="mailto:<?php echo $_POST["email"]; ?>"><?php echo $_POST["email"]; ?></a></p>	
+			<p>Your major is: </p>		
 		</div>
 	</body>
 </html>
