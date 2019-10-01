@@ -15,7 +15,7 @@
 					$majors = ["Computer Science"=>"CS", "Web Design and Development"=>"WDD", "Computer Information Technology"=>"CIT", "Computer Engineering"=>"CE"];
 
 					foreach($majors as $major) {
-						echo "<input type="radio" name="major" value=$major>$major <br>";
+						echo "<input type='radio' name='major' value=$major>$major <br>";
 					}
 				?>
 				Comments: <textarea name="comments"></textarea><br>
