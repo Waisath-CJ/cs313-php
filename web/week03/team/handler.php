@@ -12,9 +12,12 @@
 			<p>Your major is: <?php echo $_POST["major"]; ?></p>
 			<p>Comments: <?php echo $_POST["comments"]; ?></p>
 			<p>Continents visited: <br>
-				<?php foreach ($_POST["continents"] as $continent) {
-					echo $continent . "<br>";
-				} ?>
+				<?php 
+					$cont = [0=>"North America",1=>"South America",2=>"Europe",3=>"Asia",4=>"Australia",5=>"Africa",6=>"Antarctica"];
+   				foreach ($_POST['continents'] as $continent) {
+       				echo $cont[$continent]."<br>";
+     				} 
+				?>
 			</p>		
 		</div>
 	</body>
