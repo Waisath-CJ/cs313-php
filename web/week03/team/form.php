@@ -11,10 +11,13 @@
 				Name: <input type="text" name="name"><br>
 				Email: <input type="text" name="email"><br>
 				Please pick your major:<br>
-				<input type="radio" name="major" value="CS">Computer Science<br>
-				<input type="radio" name="major" value="WDD">Web Design and Development<br>
-				<input type="radio" name="major" value="CIT">Computer Information Technology<br>
-				<input type="radio" name="major" value="CE">Computer Engineering<br>
+				<?php
+					$majors = ["Computer Science"=>"CS", "Web Design and Development"=>"WDD", "Computer Information Technology"=>"CIT", "Computer Engineering"=>"CE"];
+
+					foreach($majors as $major) {
+						echo "<input type="radio" name="major" value=$major>$major <br>";
+					}
+				?>
 				Comments: <textarea name="comments"></textarea><br>
 				Which continents have you been to? <br>
 				<input type="checkbox" name="continents[]" value="North America">North America <br>
