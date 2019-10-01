@@ -20,13 +20,13 @@
 				?>
 				Comments: <textarea name="comments"></textarea><br>
 				Which continents have you been to? <br>
-				<input type="checkbox" name="continents[]" value="North America">North America <br>
-				<input type="checkbox" name="continents[]" value="South America">South America <br>
-				<input type="checkbox" name="continents[]" value="Europe">Europe <br>
-				<input type="checkbox" name="continents[]" value="Asia">Asia <br>
-				<input type="checkbox" name="continents[]" value="Australia">Australia <br>
-				<input type="checkbox" name="continents[]" value="Africa">Africa <br>
-				<input type="checkbox" name="continents[]" value="Antarctica">Antarctica <br>
+				<input type="checkbox" name="continents[]" value="0">North America <br>
+				<input type="checkbox" name="continents[]" value="1">South America <br>
+				<input type="checkbox" name="continents[]" value="2">Europe <br>
+				<input type="checkbox" name="continents[]" value="3">Asia <br>
+				<input type="checkbox" name="continents[]" value="4">Australia <br>
+				<input type="checkbox" name="continents[]" value="5">Africa <br>
+				<input type="checkbox" name="continents[]" value="6">Antarctica <br>
 				<input type="submit" name="submit">
 			</form>
 		</div>
