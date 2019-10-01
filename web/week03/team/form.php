@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Team Activity - Week 03</title>
+		<title>Team Activity - Week 03</title> 
 		<meta charset="utf-8">
 	</head>
 
