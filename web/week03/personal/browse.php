@@ -48,7 +48,7 @@ session_start();
 				<tr>
 					<td><img src="pictures/loz.png" alt="Legend of Zelda - Breath of the Wild"></td>
 					<td>$10.90</td>
-					<td><button type="button" onclick="<?php $_SESSION['lozCount'] += 1;?>">Add to Cart</button></td>
+					<td><button type="button" onclick=<?php $_SESSION['lozCount'] += 1;?>>Add to Cart</button></td>
 				</tr>
 			</table>
 		</div>
