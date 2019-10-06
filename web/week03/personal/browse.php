@@ -36,7 +36,7 @@ session_start();
 				</ul>
 			</header>
 
-
+			<?php $_SESSION["favcolor"] = "yellow"; ?>
 		</div>
 	</body>
 </html>
