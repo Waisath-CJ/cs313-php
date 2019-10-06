@@ -17,6 +17,12 @@ session_start();
 
 		<!-- Latest compiled JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+		<style type="text/css">
+			img {
+				width: 50%;
+				height: 50%;
+			}
+		</style>
 	</head>
 	
 	<body>
