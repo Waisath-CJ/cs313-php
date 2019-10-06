@@ -39,7 +39,7 @@ session_start();
 			<?php $_SESSION["favcolor"] = "yellow"; ?>
 
 			<p>Please look at some of our fine videogames in stock.</p>
-			<table class="table-bordered">
+			<table class="table table-bordered">
 				<tr>
 					<th>Product</th>
 					<th>Price</th>
@@ -48,7 +48,7 @@ session_start();
 				<tr>
 					<td><img src="pictures/loz.png" alt="Legend of Zelda - Breath of the Wild"></td>
 					<td>$10.90</td>
-					<td><button type="button" onclick=<?php $_SESSION['lozCount'] += 1;?>>Add to Cart</button></td>
+					<td><button type="button" onclick="">Add to Cart</button></td>
 				</tr>
 			</table>
 		</div>
