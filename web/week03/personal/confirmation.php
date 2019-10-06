@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -21,6 +24,11 @@
 			<?php include "nav.php"; ?>
 
 
+
+			<?php 
+				session_unset();
+				session_destroy();
+			?>
 		</div>
 	</body>
 </html>
