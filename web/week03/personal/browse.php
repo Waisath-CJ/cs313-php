@@ -48,6 +48,16 @@ session_start();
 					<td>$10.90</td>
 					<td><button type="button" onclick="">Add to Cart</button></td>
 				</tr>
+				<tr>
+					<td><img src="pictures/blops4.jpg" alt="Call of Duty: Black Ops 4" class="mx-auto d-block"></td>
+					<td>$15.99</td>
+					<td><button type="button" onclick="">Add to Cart</button></td>
+				</tr>
+				<tr>
+					<td><img src="pictures/reach.png" alt="Halo: Reach" class="mx-auto d-block"></td>
+					<td>$21.43</td>
+					<td><button type="button" onclick="">Add to Cart</button></td>
+				</tr>
 			</table>
 		</div>
 	</body>
