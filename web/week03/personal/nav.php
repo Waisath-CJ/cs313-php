@@ -1,5 +1,6 @@
 <?php
 	echo "<header>";
+	echo "<h1>The Video Game Emporium</h1>";
 	echo '<ul class="nav nav-pills nav-justified">
 				<li class="nav-item">
 					<a class="nav-link" href="browse.php">Browse Items</a>
