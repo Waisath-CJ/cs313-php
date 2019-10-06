@@ -23,7 +23,7 @@ session_start();
 		<div id="wrapper">
 			<?php include "nav.php"; ?>
 
-
+			<h2>Order Confirmation</h2>
 
 			<?php 
 				session_unset();

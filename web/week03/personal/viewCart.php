@@ -36,7 +36,7 @@ session_start();
 				</ul>
 			</header>
 
-			<?php echo $_SESSION["favcolor"]; ?>
+			<?php echo $_SESSION["lozCount"]; ?>
 		</div>
 	</body>
 </html>
