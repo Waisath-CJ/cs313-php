@@ -46,7 +46,7 @@ session_start();
 					<th>Add to Cart</th>
 				</tr>
 				<tr>
-					<td><img src="pictures/loz.png" alt="Legend of Zelda - Breath of the Wild"></td>
+					<td><img src="pictures/loz.png" alt="Legend of Zelda - Breath of the Wild" class="mx-auto d-block"></td>
 					<td>$10.90</td>
 					<td><button type="button" onclick="">Add to Cart</button></td>
 				</tr>
