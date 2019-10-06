@@ -14,6 +14,8 @@
 
 		<!-- Latest compiled JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+		<link rel="stylesheet" type="text/css" href="styles.css">
 	</head>
 	
 	<body>
@@ -33,7 +35,7 @@
 				</ul>
 			</header>
 
-			
+
 		</div>
 	</body>
 </html>
