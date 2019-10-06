@@ -36,8 +36,6 @@ session_start();
 				</ul>
 			</header>
 
-			<?php $_SESSION["favcolor"] = "yellow"; ?>
-
 			<p>Please look at some of our fine videogames in stock.</p>
 			<table class="table table-bordered">
 				<tr>
