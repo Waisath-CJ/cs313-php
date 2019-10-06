@@ -18,6 +18,8 @@
 	
 	<body>
 		<div id="wrapper">
+			<?php include "nav.php"; ?>
+
 			
 		</div>
 	</body>
