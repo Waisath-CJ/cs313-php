@@ -39,7 +39,7 @@ session_start();
 			<?php $_SESSION["favcolor"] = "yellow"; ?>
 
 			<p>Please look at some of our fine videogames in stock.</p>
-			<table>
+			<table class="table-bordered">
 				<tr>
 					<th>Product</th>
 					<th>Price</th>
