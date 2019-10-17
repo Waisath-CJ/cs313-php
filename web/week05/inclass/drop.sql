@@ -1,1 +1,0 @@
-DROP TABLE Event_Participant, Participant, Event;
