@@ -1,4 +1,4 @@
-DROP TABLE Scriptures, Topics, Scripture-Topic;
+DROP TABLE Scriptures, Topics, Scripture_Topic;
 CREATE TABLE Scriptures(
 id SERIAL PRIMARY KEY,
 book VARCHAR (45) NOT NULL,
@@ -12,7 +12,7 @@ CREATE TABLE Topics (
     name VARCHAR NOT NULL
 );
 
-CREATE TABLE Scripture-Topic (
+CREATE TABLE Scripture_Topic (
     id SERIAL PRIMARY KEY,
     scripture_id int REFERENCES Scriptures(id),
     topic_id int REFERENCES Topics(id)
