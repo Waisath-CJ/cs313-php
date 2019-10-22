@@ -36,15 +36,15 @@
 
     <body>
         <h1>Scripture Topics</h1>
-        <form action="addTopic.php" method="post">
-            Scripture Book: <input type="text" name="book"><br>
-            Scripture Chapter: <input type="text" name="chapter"><br>
+        <form action="addScripture.php" method="post">
+            Book: <input type="text" name="book"><br>
+            Chapter: <input type="text" name="chapter"><br>
             Verse(s): <input type="text" name="verse"><br>
-            Content: <textarea name="content"></textarea>
+            Content: <textarea name="content"></textarea><br>
 
             <?php
                 foreach ($db->query("SELECT * FROM Topics") as $row) {
-                    echo "<input type='checkbox' name='topic" . $row['id'] . "' value='" . $row['id'] . "'> " . $row['name'] . "<br>";
+                    echo "<input type='checkbox' name='topic[]' value='" . $row['id'] . "'> " . $row['name'] . "<br>";
                 }
             ?>
 
