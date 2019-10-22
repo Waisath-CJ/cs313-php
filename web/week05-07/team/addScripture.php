@@ -26,13 +26,6 @@ catch (PDOException $ex)
   die();
 }
 
-/*if (isset($_POST['topic'])) {
-    $topic = $_POST['topic'];
-} else {
-    $topic = "";
-}
-*/
-
 $book = $_POST['book'];
 $chapter = $_POST['chapter'];
 $verse = $_POST['verse'];
@@ -47,4 +40,13 @@ $stmt->bindValue(':verse', $verse, PDO::PARAM_STR);
 $stmt->bindValue(':content', $content, PDO::PARAM_STR);
 
 $stmt->execute();
+
+$topic = $_POST['topic'];
+if (!empty($topic)) {
+    $n = count($topic);
+    
+    for ($i = 0; $i < $n; $i++) {
+        echo ($topic[$i] . " ");
+    }
+}
 ?>
