@@ -40,13 +40,20 @@ $stmt->bindValue(':verse', $verse, PDO::PARAM_STR);
 $stmt->bindValue(':content', $content, PDO::PARAM_STR);
 
 $stmt->execute();
+$scripture_id = $db->lastInsertId('scriptures_id_seq');
 
 $topic = $_POST['topic'];
 if (!empty($topic)) {
     $n = count($topic);
-    
+
     for ($i = 0; $i < $n; $i++) {
-        echo ($topic[$i] . " ");
+        $sql = 'INSERT INTO Scripture_Topic (scripture_id, topic_id) VALUES (:scrip_id, :topic_id)';
+        $stmt = $db->prepare($sql);
+
+        $stmt->bindValue(':scrip_id', $scripture_id, PDO::PARAM_INT); 
+        $stmt->bindValue(':topic_id', $topic[$i], PDO::PARAM_INT);
+        
+        $stmt->execute();
     }
 }
 ?>
