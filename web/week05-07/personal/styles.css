@@ -1,0 +1,11 @@
+/* File: styles.css */
+
+body {
+    background-color: #E6E6E6;
+}
+
+.containter {
+    max-width: 1250px;
+    background-color: #FFFFFF;
+    margin: auto;
+}
