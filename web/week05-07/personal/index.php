@@ -9,7 +9,7 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     </head>
 
-    <body>
+    <body style="background-color: #E6E6E6">
         <div class="containter" style="max-width: 1250px; margin: auto;">
             <?php require('header.php'); ?>
 
