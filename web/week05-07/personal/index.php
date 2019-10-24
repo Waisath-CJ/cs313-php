@@ -11,7 +11,7 @@
     </head>
 
     <body>
-        <div class="container">
+        <div class="containgit er">
             <?php require('header.php'); ?>
             <h1>Welcome to Whit's Baked Delights!</h1>
             <p>We have some of the best baked goods in Virginia! Using only the best ingredients, our baked delights are always ready for any occasion.</p> 
