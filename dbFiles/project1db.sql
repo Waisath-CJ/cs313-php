@@ -11,7 +11,7 @@ CREATE TABLE Customers (
 );
 
 CREATE TABLE Products (
-	product_id SERIAL PRIMARY KEY,
+	id SERIAL PRIMARY KEY,
 	product varchar NOT NULL,
 	quantity int NOT NULL
 );
@@ -28,3 +28,5 @@ INSERT INTO Customers(firstName, lastName, street, city, state, zip) VALUES ('Jo
 INSERT INTO Customers(firstName, lastName, street, city, state, zip) VALUES ('Anne', 'Bonham', '310 E 10600 S Apt 11', 'Sandy', 'UT', '84070');
 
 INSERT INTO Products(product, quantity) VALUES ('Sugar Cookies', '4'), ('Chocolate Chip Cookies', '12');
+
+INSERT INTO Orders(customer_id, product_id) VALUES ('1', '1'), ('1', '2'), ('3', '1');
