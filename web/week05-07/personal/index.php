@@ -12,7 +12,8 @@
     <body style="background-color: #E6E6E6">
         <div class="containter" style="max-width: 1250px; margin: auto; background-color: #FFFFFF;">
             <?php require('header.php'); ?>
-
+            <h1>Welcome to Whit's Baked Delights!</h1>
+            <p>We have some of the best baked goods in Virginia! Using only the best ingredients, our baked delights are always ready for any occasion.</p> 
         </div>
     </body>
 </html>
