@@ -10,7 +10,7 @@
     </head>
 
     <body style="background-color: #E6E6E6">
-        <div class="containter" style="max-width: 1250px; margin: auto;">
+        <div class="containter" style="max-width: 1250px; margin: auto; background-color: #FFFFFF;">
             <?php require('header.php'); ?>
 
         </div>
