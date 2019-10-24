@@ -11,7 +11,7 @@
     </head>
 
     <body>
-        <div class="containter">
+        <div class="container">
             <?php require('header.php'); ?>
 
         </div>
