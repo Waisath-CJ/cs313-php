@@ -21,3 +21,7 @@ CREATE TABLE Orders (
 	order_number SERIAL,
 	customer_id int REFERENCES Customers(id)
 );
+
+INSERT INTO Customers(firstName, lastName, street, city, state, zip) VALUES ('CJ', 'Waisath', '3903 E Huber St', 'Mesa', 'AZ', '85205');
+INSERT INTO Customers(firstName, lastName, street, city, state, zip) VALUES ('Josh', 'Fast', '649 S 2nd W Apt 3406', 'Rexburg', 'ID', '83440');
+INSERT INTO Customers(firstName, lastName, street, city, state, zip) VALUES ('Anne', 'Bonham', '310 E 10600 S Apt 11', 'Sandy', 'UT', '84070');
