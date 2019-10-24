@@ -10,7 +10,7 @@
     </head>
 
     <body>
-        <div class="containter" style="max-width: 1250px;">
+        <div class="containter" style="max-width: 1250px; margin: auto;">
             <?php require('header.php'); ?>
 
         </div>
