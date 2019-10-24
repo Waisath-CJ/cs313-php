@@ -17,10 +17,7 @@ CREATE TABLE Products (
 );
 
 CREATE TABLE Orders (
-	order_id SERIAL,
+	order_id SERIAL PRIMARY KEY,
 	order_number SERIAL,
-	customer_id int,
-	PRIMARY KEY (order_id),
-	CONSTRAINT FK_customer_id FOREIGN KEY (customer_id)
-	REFERENCES Customers(id)
+	customer_id int REFERENCES Customers(id)
 );
