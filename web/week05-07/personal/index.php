@@ -10,8 +10,9 @@
     </head>
 
     <body>
-        <?php require('header.php'); ?>
+        <div class="containter">
+            <?php require('header.php'); ?>
 
-
+        </div>
     </body>
 </html>
