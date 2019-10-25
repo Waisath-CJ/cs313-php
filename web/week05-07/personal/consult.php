@@ -40,7 +40,7 @@
                     </div>
                 </div>
                 <div class="form-row">
-                    <label>Pick your consultation type:</label><br>
+                    <label>Pick your consultation type:&nbsp;</label><br>
                     <div class="custom-control custom-radio custom-control-inline">
                         <input type="radio" name="consultType" class="custom-control-input" value="1">
                         <label class="custom-control-label">Cookies</label>
