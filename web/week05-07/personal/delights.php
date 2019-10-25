@@ -11,12 +11,6 @@
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-        <style>
-            img {
-                width: 50%;
-                height: 50%;
-            }
-        </style>
     </head>
 
     <body>
@@ -34,15 +28,15 @@
                     $bakedGood_name = $row['name'];
                     
                     if ($bakedGood_name == 'Cookies') {
-                        echo '<img src="pics/cookies.jpg" class="card-img-top img-thumbnail" alt="Cookies">';
+                        echo '<img src="pics/cookies.jpg" class="card-img-top img-thumbnail" alt="Cookies" style="width: 50%; height: 50%;">';
                     } elseif ($bakedGood_name == 'Brownies') {
-                        echo '<img src="pics/brownies.jpg" class="card-img-top img-thumbnail" alt="Brownies">';
+                        echo '<img src="pics/brownies.jpg" class="card-img-top img-thumbnail" alt="Brownies" style="width: 50%; height: 50%;">';
                     } elseif ($bakedGood_name == 'Cupcakes') {
-                        echo '<img src="pics/cupcakes.jpg" class="card-img-top img-thumbnail" alt="Cupcakes">';
+                        echo '<img src="pics/cupcakes.jpg" class="card-img-top img-thumbnail" alt="Cupcakes" style="width: 50%; height: 50%;">';
                     } elseif ($bakedGood_name == 'Cakes') {
-                        echo '<img src="pics/cake.jpg" class="card-img-top img-thumbnail" alt="Cake">';
+                        echo '<img src="pics/cake.jpg" class="card-img-top img-thumbnail" alt="Cake" style="width: 50%; height: 50%;">';
                     } elseif ($bakedGood_name == 'Pies') {
-                        echo '<img src="pics/pie.jpg" class="card-img-top img-thumbnail" alt="Pie">';
+                        echo '<img src="pics/pie.jpg" class="card-img-top img-thumbnail" alt="Pie" style="width: 50%; height: 50%;">';
                     }
                     echo '<div class="card" style="width: 18rem;">';
                     echo '<div class="card-body">';
