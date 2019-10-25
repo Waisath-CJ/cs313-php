@@ -27,6 +27,7 @@
                     $bakedGood_id = $row['id'];
                     $bakedGood_name = $row['name'];
                     
+                    echo '<div class="card" style="width: 18rem;">';
                     if ($bakedGood_name == 'Cookies') {
                         echo '<img src="pics/cookies.jpg" class="card-img-top img-thumbnail" alt="Cookies" style="width: 25%; height: 25%;">';
                     } elseif ($bakedGood_name == 'Brownies') {
@@ -38,7 +39,6 @@
                     } elseif ($bakedGood_name == 'Pies') {
                         echo '<img src="pics/pie.jpg" class="card-img-top img-thumbnail" alt="Pie" style="width: 25%; height: 25%;">';
                     }
-                    echo '<div class="card" style="width: 18rem;">';
                     echo '<div class="card-body">';
                     echo '<h5 class="card-title">'.$bakedGood_name.'</h5>';
                     echo '<p class="card-text">';
