@@ -27,9 +27,15 @@
                     $bakedGood_id = $row['id'];
                     $bakedGood_name = $row['name'];
                     if ($bakedGood_name == 'Cookies') {
-                        echo '<img src="pics/cookie.jpg" class="card-img-top" alt="Assorted Cookies">';
-                    } else if ($bakedGood_name == 'Brownies') {
-                        echo '<img src="pics/brownies.jpg" class="card-img-top" alt="...">'
+                        echo '<img src="pics/cookie.jpg" class="card-img-top" alt="Cookies">';
+                    } elseif ($bakedGood_name == 'Brownies') {
+                        echo '<img src="pics/brownies.jpg" class="card-img-top" alt="Brownies">';
+                    } elseif ($bakedGood_name == 'Cupcakes') {
+                        echo '<img src="pics/cupcakes.jpg" class="card-img-top" alt="Cupcakes">';
+                    } elseif ($bakedGood_name == 'Cakes') {
+                        echo '<img src="pics/cake.jpg" class="card-img-top" alt="Cake">';
+                    } elseif ($bakedGood_name == 'Pies') {
+                        echo '<img src="pics/pie.jpg" class="card-img-top" alt="Pie">';
                     }
                     echo '<div class="card" style="width: 18rem;">';
                     echo '<div class="card-body">';
@@ -49,6 +55,8 @@
                 }
                 echo '</div>';
             ?>
+            <p class="h3">Looking to buy some?</p>
+            <button type="button" class="btn btn-outline-dark btn-block">Schedule a Consultation</button>
         </div>
     </body>
 </html>
