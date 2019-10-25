@@ -40,34 +40,26 @@
                     </div>
                 </div>
                 <div class="form-row">
-                    <label>Pick your consultation type:</label>
+                    <label>Pick your consultation type:</label><br>
                     <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" name="consultType" class="custom-control-input">
-                        <label class="custom-control-label">Toggle this custom radio</label>
+                        <input type="radio" name="consultType" class="custom-control-input" value="1">
+                        <label class="custom-control-label">Cookies</label>
                     </div>
                     <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" name="consultType" class="custom-control-input">
-                        <label class="custom-control-label">Or toggle this other custom radio</label>
+                        <input type="radio" name="consultType" class="custom-control-input" value="2">
+                        <label class="custom-control-label">Brownies</label>
                     </div>
                     <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" name="consultType" class="custom-control-input">
-                        <label class="custom-control-label">Or toggle this other custom radio</label>
+                        <input type="radio" name="consultType" class="custom-control-input" value="3">
+                        <label class="custom-control-label">Cupcakes</label>
                     </div>
                     <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" name="consultType" class="custom-control-input">
-                        <label class="custom-control-label">Or toggle this other custom radio</label>
+                        <input type="radio" name="consultType" class="custom-control-input" value="4">
+                        <label class="custom-control-label">Cakes</label>
                     </div>
                     <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" name="consultType" class="custom-control-input">
-                        <label class="custom-control-label">Or toggle this other custom radio</label>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="gridCheck">
-                    <label class="form-check-label" for="gridCheck">
-                        Check me out
-                    </label>
+                        <input type="radio" name="consultType" class="custom-control-input" value="5">
+                        <label class="custom-control-label">Pies</label>
                     </div>
                 </div>
                 <button type="submit" class="btn btn-outline-dark">Submit</button>
