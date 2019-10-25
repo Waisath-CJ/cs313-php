@@ -5,7 +5,7 @@ CREATE TABLE Customers (
 	firstName varchar NOT NULL,
 	lastName varchar NOT NULL,
 	email varchar NOT NULL,
-	phone int NOT NULL,
+	phone bigint NOT NULL,
 	username varchar NOT NULL UNIQUE,
 	password varchar NOT NULL
 );
