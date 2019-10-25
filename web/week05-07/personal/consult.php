@@ -30,11 +30,11 @@
                     </div>
                 </div>
                 <div class="form-row">
-                    <div class="form-group col-md-6">
+                    <div class="form-group col-md-8">
                         <label for="email">Email</label>
                         <input type="text" class="form-control" name="email" placeholder="Email">
                     </div>
-                    <div class="form-group col-md-6">
+                    <div class="form-group col-md-4">
                         <label for="phoneNumber">Phone Number</label>
                         <input type="text" class="form-control" name="phoneNumber" placeholder="Phone Number">
                     </div>
