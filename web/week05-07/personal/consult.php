@@ -40,7 +40,7 @@
                     </div>
                 </div>
                 <div class="form-row">
-                    <div class="form-group">
+                    <div class="form-group col-md-4">
                         <label for="consultType">Consultation Type</label>
                         <select name="consultType" class="custom-select">
                             <option selected disabled hidden>Choose a consult type...</option>
@@ -49,6 +49,24 @@
                             <option value="3">Cupcakes</option>
                             <option value="4">Cakes</option>
                             <option value="5">Pies</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="date">Date</label>
+                        <input type="date" class="form-control" name="date">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="time">Time</label>
+                        <select name="time" class="custom-select">
+                            <option selected disabled hidden>Choose a time...</option>
+                            <option value="10:00 AM">10:00 AM</option>
+                            <option value="10:45 AM">10:45 AM</option>
+                            <option value="11:30 AM">11:30 AM</option>
+                            <option value="12:15 PM">12:15 PM</option>
+                            <option value="1:00 PM">1:00 PM</option>
+                            <option value="1:45 PM">1:45 PM</option>
+                            <option value="2:30 PM">2:30 PM</option>
+                            <option value="3:15 PM">3:15 PM</option>
                         </select>
                     </div>
                 </div>
