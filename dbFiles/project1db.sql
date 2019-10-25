@@ -6,8 +6,8 @@ CREATE TABLE Customers (
 	lastName varchar NOT NULL,
 	email varchar NOT NULL,
 	phone bigint NOT NULL,
-	username varchar NOT NULL UNIQUE,
-	password varchar NOT NULL
+	username varchar UNIQUE,
+	password varchar 
 );
 
 CREATE TABLE BakedGoods (
