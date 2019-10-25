@@ -49,7 +49,7 @@
                 }
                 echo '</div>';
             ?>
-            <p class="h3 text-center">Looking to buy some?</p>
+            <p class="h3">Looking to buy some?</p>
             <button type="button" class="btn btn-outline-dark btn-block">Schedule a Consultation</button>
         </div>
     </body>
