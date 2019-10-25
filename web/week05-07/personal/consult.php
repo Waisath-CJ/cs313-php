@@ -71,7 +71,8 @@
                     </div>
                 </div>
                 <div class="form-row">
-                    <div class="form-group">
+                    <div class="input-group">
+                        <label>Additional Comments:</label>
                         <textarea class="form-control"></textarea>
                     </div>
                 </div>
