@@ -8,6 +8,7 @@
       <div class="navbar-nav">
         <a class="nav-item nav-link" href="index.php">Home</a>
         <a class="nav-item nav-link" href="delights.php">Baked Delights</a>
+        <a class="nav-item nav-link" href="consult.php">Schedule a Consultation</a>
         <a class="nav-item nav-link" href="about.php">About Us</a>
         <a class="nav-item nav-link" href="contact.php">Contact Me</a>
       </div>
