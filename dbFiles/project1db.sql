@@ -29,9 +29,9 @@ CREATE TABLE Consultations (
 	time TEXT NOT NULL
 );
 
-INSERT INTO Customers(firstName, lastName, street, city, state, zip) VALUES ('CJ', 'Waisath', '3903 E Huber St', 'Mesa', 'AZ', '85205');
-INSERT INTO Customers(firstName, lastName, street, city, state, zip) VALUES ('Josh', 'Fast', '649 S 2nd W Apt 3406', 'Rexburg', 'ID', '83440');
-INSERT INTO Customers(firstName, lastName, street, city, state, zip) VALUES ('Anne', 'Bonham', '310 E 10600 S Apt 11', 'Sandy', 'UT', '84070');
+INSERT INTO Customers(firstName, lastName, email, phone) VALUES ('CJ', 'Waisath', 'soccerboycj.97@hotmail.com', '4806332188');
+INSERT INTO Customers(firstName, lastName, email, phone) VALUES ('Josh', 'Fast', 'jfast@gmail.com', '8012223322');
+INSERT INTO Customers(firstName, lastName, email, phone) VALUES ('Anne', 'Bonham', 'annebonham@gmail.com', '8013456789');
 INSERT INTO BakedGoods(name) VALUES ('Cookies'), ('Brownies'), ('Cupcakes'), ('Cakes'), ('Pies'); 
 INSERT INTO Flavors(bakedGood_id, flavor) VALUES ('1', 'Sugar'), ('1', 'Chocolate Chip'), ('1', 'Lemon'), ('1', 'Peanut Butter Ganache'), ('1', 'Chocolate Ganache'), ('1', 'White Chocolate Macadamia');
 INSERT INTO Flavors(bakedGood_id, flavor) VALUES ('2', 'Chocolate'), ('2', 'Mint'), ('2', 'Smores');
