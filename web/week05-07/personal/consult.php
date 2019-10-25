@@ -18,7 +18,7 @@
             <?php require('header.php'); ?>
             <h1 class="display-3 text-center">Get your own Baked Delights!</h3>
             <p class="text-muted text-center">Schedule your consultation today so you can get your own delicions Baked Delights!</p>
-            <form>
+            <form action="insertConsult.php" method="POST">
                 <div class="form-row">
                     <div class="form-group col-md-6">
                     <label for="firstName">First Name</label>
@@ -30,12 +30,10 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="inputAddress">Address</label>
-                    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-                </div>
-                <div class="form-group">
-                    <label for="inputAddress2">Address 2</label>
-                    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                    <label for="email">Email</label>
+                    <input type="text" class="form-control" name="email" placeholder="Email">
+                    <label for="phoneNumber">Phone Number</label>
+                    <input type="text" class="form-control" name="phoneNumber" placeholder="Phone Number">
                 </div>
                 <div class="form-row">
                     <div class="form-group col-md-6">
@@ -62,7 +60,7 @@
                     </label>
                     </div>
                 </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" class="btn btn-outline-dark">Submit</button>
             </form>
         </div>
     </body>
