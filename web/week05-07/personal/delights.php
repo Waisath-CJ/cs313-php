@@ -16,9 +16,8 @@
     <body>
         <div class="container">
             <?php require('header.php'); ?>
-            <h1 class="display-3 text-center">Our Baked Delights<br>
-                <p class="text-muted text-center">Check out our amazing selection of baked delights!</p>
-            </h1>
+            <h1 class="display-3 text-center">Our Baked Delights</h1>
+            <p class="text-muted text-center">Check out our amazing selection of baked delights!</p>
 
             <?php
                 $statement = $db->prepare('SELECT * FROM BakedGoods');
