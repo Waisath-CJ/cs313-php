@@ -40,15 +40,17 @@
                     </div>
                 </div>
                 <div class="form-row">
-                    <label for="consultType">Consultation Type</label>
-                    <select name="consultType" class="custom-select">
-                        <option selected disabled hidden>Choose a consult type...</option>
-                        <option value="1">Cookies</option>
-                        <option value="2">Brownies</option>
-                        <option value="3">Cupcakes</option>
-                        <option value="4">Cakes</option>
-                        <option value="5">Pies</option>
-                    </select>
+                    <div class="form-group">
+                        <label for="consultType">Consultation Type</label>
+                        <select name="consultType" class="custom-select">
+                            <option selected disabled hidden>Choose a consult type...</option>
+                            <option value="1">Cookies</option>
+                            <option value="2">Brownies</option>
+                            <option value="3">Cupcakes</option>
+                            <option value="4">Cakes</option>
+                            <option value="5">Pies</option>
+                        </select>
+                    </div>
                 </div>
                 <div class="form-row">
                     <div class="form-group col-md-6">
