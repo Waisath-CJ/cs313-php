@@ -24,7 +24,7 @@ CREATE TABLE Flavors (
 CREATE TABLE Consultations (
 	id SERIAL PRIMARY KEY,
 	customer_id int REFERENCES Customers(id),
-	consult_type varchar NOT NULL,
+	consult_type int REFERENCES BakedGoods(id),
 	date DATE NOT NULL,
 	time TEXT NOT NULL
 );
