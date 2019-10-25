@@ -62,6 +62,16 @@
                         <label class="custom-control-label">Pies</label>
                     </div>
                 </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="date">Last Name</label>
+                        <input type="date" class="form-control" name="date" placeholder="YYYY-MM-DD">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="time">Last Name</label>
+                        <input type="time" class="form-control" name="time">
+                    </div>
+                </div>
                 <button type="submit" class="btn btn-outline-dark">Submit</button>
             </form>
         </div>
