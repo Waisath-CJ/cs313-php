@@ -71,11 +71,9 @@
                     </div>
                 </div>
                 <div class="form-row">
-                    <div class="form-group">
-                        <div class="input-group">
-                            <label>Additional Comments:&nbsp;</label>
-                            <textarea class="form-control"></textarea>
-                        </div>
+                    <div class="input-group">
+                        <label>Additional Comments:&nbsp;</label>
+                        <textarea class="form-control"></textarea>
                     </div>
                 </div>
                 <button type="submit" class="btn btn-outline-dark">Submit</button>
