@@ -76,7 +76,7 @@
                         <textarea class="form-control"></textarea>
                     </div>
                 </div>
-                <button type="submit" class="btn btn-outline-dark">Submit</button>
+                <button type="submit" class="btn btn-outline-dark btn-block">Submit</button>
             </form>
         </div>
     </body>
