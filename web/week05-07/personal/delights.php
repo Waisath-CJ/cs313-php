@@ -26,6 +26,11 @@
                 while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
                     $bakedGood_id = $row['id'];
                     $bakedGood_name = $row['name'];
+                    if ($bakedGood_name == 'Cookies') {
+                        echo '<img src="pics/cookie.jpg" class="card-img-top" alt="Assorted Cookies">';
+                    } else if ($bakedGood_name == 'Brownies') {
+                        echo '<img src="pics/brownies.jpg" class="card-img-top" alt="...">'
+                    }
                     echo '<div class="card" style="width: 18rem;">';
                     echo '<div class="card-body">';
                     echo '<h5 class="card-title">'.$bakedGood_name.'</h5>';
@@ -44,6 +49,8 @@
                 }
                 echo '</div>';
             ?>
+            <p class="h3 text-center">Looking to buy some?</p>
+            <button type="button" class="btn btn-outline-dark btn-lg btn-block">Schedule a Consultation</button>
         </div>
     </body>
 </html>
