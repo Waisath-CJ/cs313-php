@@ -16,7 +16,33 @@
     <body>
         <div class="container">
             <?php require('header.php'); ?>
+            <h1 class="display-3 text-center">Our Baked Delights<br>
+                <p class="text-muted text-center">Check out our amazing selection of baked delights!</p>
+            </h1>
 
+            <?php
+                $statement = $db->prepare('SELECT * FROM BakedGoods');
+                $statement->execute();
+                while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
+                    $bakedGood_id = $row['id'];
+                    $bakedGood_name = $row['name'];
+                    echo '<div class="card">';
+                    echo '<div class="card-body">';
+                    echo '<h5 class="card-title">'.$bakedGood_name.'</h5>';
+                    echo '<p class="card-text">';
+
+                    $statement2 = $db->prepare('SELECT * FROM Flavors WHERE bakedGood_id = :bgid');
+                    $statement2->bindValue(':bgid', $bakedGood_id);
+                    $statement2->execute();
+                    while ($row2 = $statement2->fetch(PDO::FETCH_ASSOC)) {
+                        $flavor = $row2['flavor'];
+                        echo $flavor . '<br>';
+                    }
+                    echo '</p>';
+                    echo '</div>';
+                    echo '</div>';
+                }
+            ?>
         </div>
     </body>
 </html>
