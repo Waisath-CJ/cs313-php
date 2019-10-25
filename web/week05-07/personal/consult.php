@@ -70,6 +70,11 @@
                         </select>
                     </div>
                 </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <textarea class="form-control"></textarea>
+                    </div>
+                </div>
                 <button type="submit" class="btn btn-outline-dark">Submit</button>
             </form>
         </div>
