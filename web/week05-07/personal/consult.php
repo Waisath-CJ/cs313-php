@@ -40,20 +40,26 @@
                     </div>
                 </div>
                 <div class="form-row">
-                    <div class="form-group col-md-6">
-                    <label for="inputCity">City</label>
-                    <input type="text" class="form-control" id="inputCity">
+                    <label>Pick your consultation type:</label>
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" name="consultType" class="custom-control-input">
+                        <label class="custom-control-label">Toggle this custom radio</label>
                     </div>
-                    <div class="form-group col-md-4">
-                    <label for="inputState">State</label>
-                    <select id="inputState" class="form-control">
-                        <option selected>Choose...</option>
-                        <option>...</option>
-                    </select>
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" name="consultType" class="custom-control-input">
+                        <label class="custom-control-label">Or toggle this other custom radio</label>
                     </div>
-                    <div class="form-group col-md-2">
-                    <label for="inputZip">Zip</label>
-                    <input type="text" class="form-control" id="inputZip">
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" name="consultType" class="custom-control-input">
+                        <label class="custom-control-label">Or toggle this other custom radio</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" name="consultType" class="custom-control-input">
+                        <label class="custom-control-label">Or toggle this other custom radio</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" name="consultType" class="custom-control-input">
+                        <label class="custom-control-label">Or toggle this other custom radio</label>
                     </div>
                 </div>
                 <div class="form-group">
