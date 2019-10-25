@@ -20,13 +20,12 @@
             <p class="text-muted text-center">Check out our amazing selection of baked delights!</p>
 
             <?php
-                echo '<div class="row">';
+                echo '<div class="card-deck">';
                 $statement = $db->prepare('SELECT * FROM BakedGoods');
                 $statement->execute();
                 while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
                     $bakedGood_id = $row['id'];
                     $bakedGood_name = $row['name'];
-                    echo '<div class col-sm-6>';
                     echo '<div class="card" style="width: 18rem;">';
                     echo '<div class="card-body">';
                     echo '<h5 class="card-title">'.$bakedGood_name.'</h5>';
@@ -40,7 +39,6 @@
                         echo $flavor . '<br>';
                     }
                     echo '</p>';
-                    echo '</div>';
                     echo '</div>';
                     echo '</div>';
                 }
