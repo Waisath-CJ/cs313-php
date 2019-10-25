@@ -76,7 +76,7 @@
                             <option value="11:30 AM">11:30 AM</option>
                             <option value="12:15 PM">12:15 PM</option>
                             <option value="1:00 PM">1:00 PM</option>
-                            <option value="1:45 PM">!:45 PM</option>
+                            <option value="1:45 PM">1:45 PM</option>
                             <option value="2:30 PM">2:30 PM</option>
                             <option value="3:15 PM">3:15 PM</option>
                         </select>

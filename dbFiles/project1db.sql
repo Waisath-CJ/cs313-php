@@ -18,7 +18,7 @@ CREATE TABLE Consultations (
 	email varchar NOT NULL,
 	phone bigint NOT NULL,
 	consult_type int REFERENCES BakedGoods(id),
-	date DATE NOT NULL,
+	date TEXT NOT NULL,
 	time TEXT NOT NULL
 );
 
@@ -28,6 +28,7 @@ INSERT INTO Flavors(bakedGood_id, flavor) VALUES ('2', 'Chocolate'), ('2', 'Mint
 INSERT INTO Flavors(bakedGood_id, flavor) VALUES ('3', 'Vanilla'), ('3', 'Chocolate'), ('3', 'Red Velvet'), ('3', 'Strawberry Shortcake'), ('3', 'Lemon'), ('3', 'Coconut Creme'), ('3', 'Boston Creme'), ('3', 'Oreo');
 INSERT INTO Flavors(bakedGood_id, flavor) VALUES ('4', 'Vanilla'), ('4', 'Chocolate'), ('4', 'Marble'), ('4', 'Pineapple'), ('4', 'Strawberry'), ('4', 'White Chocolate'), ('4', 'Red Velvet');
 INSERT INTO Flavors(bakedGood_id, flavor) VALUES ('5', 'Apple'), ('5', 'Pumpkin'), ('5', 'Cherry'), ('5', 'Raspberry');
-INSERT INTO Consultations(firstName, lastName, email, phone, consult_type, date, time) VALUES ('CJ', 'Waisath', 'soccerboycj.97@hotmail.com', '4806332188', '3', '2019-10-30', '11:00:00AM');
+INSERT INTO Consultations(firstName, lastName, email, phone, consult_type, date, time) VALUES ('CJ', 'Waisath', 'soccerboycj.97@hotmail.com', '4806332188', '3', '05/29/2020', '11:30 AM');
+INSERT INTO Consultations(firstName, lastName, email, phone, consult_type, date, time) VALUES ('CJ', 'Waisath', 'soccerboycj.97@hotmail.com', '4806332188', '5', '05/29/2020', '12:15 PM');
 
 \i project1query.sql
