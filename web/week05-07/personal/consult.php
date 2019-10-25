@@ -1,3 +1,7 @@
+<?php
+	require("dbConnect.php");
+	$db = get_db();
+?>
 <!doctype html>
 <html>
     <head>
@@ -12,7 +16,7 @@
     <body>
         <div class="container">
             <?php require('header.php'); ?>
-            
+
         </div>
     </body>
 </html>

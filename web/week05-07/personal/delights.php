@@ -1,3 +1,7 @@
+<?php
+	require("dbConnect.php");
+	$db = get_db();
+?>
 <!doctype html>
 <html>
     <head>
