@@ -40,27 +40,15 @@
                     </div>
                 </div>
                 <div class="form-row">
-                    <label>Pick your consultation type:&nbsp;</label><br>
-                    <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" id="customRadioInline1" name="consultType" class="custom-control-input" value="1">
-                        <label class="custom-control-label">Cookies</label>
-                    </div>
-                    <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" id="customRadioInline2" name="consultType" class="custom-control-input" value="2">
-                        <label class="custom-control-label">Brownies</label>
-                    </div>
-                    <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" id="customRadioInline3" name="consultType" class="custom-control-input" value="3">
-                        <label class="custom-control-label">Cupcakes</label>
-                    </div>
-                    <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" id="customRadioInline4" name="consultType" class="custom-control-input" value="4">
-                        <label class="custom-control-label">Cakes</label>
-                    </div>
-                    <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" id="customRadioInline5" name="consultType" class="custom-control-input" value="5">
-                        <label class="custom-control-label">Pies</label>
-                    </div>
+                    <label for="consultType">Consultation Type</label>
+                    <select name="consultType" class="custom-select">
+                        <option selected disabled hidden>Choose a consult type...</option>
+                        <option value="1">Cookies</option>
+                        <option value="2">Brownies</option>
+                        <option value="3">Cupcakes</option>
+                        <option value="4">Cakes</option>
+                        <option value="5">Pies</option>
+                    </select>
                 </div>
                 <div class="form-row">
                     <div class="form-group col-md-6">
