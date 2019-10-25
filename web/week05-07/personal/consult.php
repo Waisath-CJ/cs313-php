@@ -21,19 +21,23 @@
             <form action="insertConsult.php" method="POST">
                 <div class="form-row">
                     <div class="form-group col-md-6">
-                    <label for="firstName">First Name</label>
-                    <input type="text" class="form-control" name="firstName" placeholder="First Name">
+                        <label for="firstName">First Name</label>
+                        <input type="text" class="form-control" name="firstName" placeholder="First Name">
                     </div>
                     <div class="form-group col-md-6">
-                    <label for="lastName">Last Name</label>
-                    <input type="text" class="form-control" name="lastName" placeholder="Last Name">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" class="form-control" name="lastName" placeholder="Last Name">
                     </div>
                 </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="text" class="form-control" name="email" placeholder="Email">
-                    <label for="phoneNumber">Phone Number</label>
-                    <input type="text" class="form-control" name="phoneNumber" placeholder="Phone Number">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="email">Email</label>
+                        <input type="text" class="form-control" name="email" placeholder="Email">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="phoneNumber">Phone Number</label>
+                        <input type="text" class="form-control" name="phoneNumber" placeholder="Phone Number">
+                    </div>
                 </div>
                 <div class="form-row">
                     <div class="form-group col-md-6">
