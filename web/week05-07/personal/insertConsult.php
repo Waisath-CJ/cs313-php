@@ -6,6 +6,7 @@
     $consultType = $_POST['consultType'];
     $date = $_POST['date'];
     $time = $_POST['time'];
+    $comments = $_POST['comments'];
 
-    echo $firstName.' '.$lastName.' - '.$email.' - '.$phoneNumber.' - '.$consultType.' - '.$date.' '.$time;
+    echo $firstName.' '.$lastName.' - '.$email.' - '.$phoneNumber.' - '.$consultType.' - '.$date.' '.$time.' - '.$comments;
 ?>
