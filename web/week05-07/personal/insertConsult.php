@@ -9,6 +9,8 @@
     require("dbConnect.php");
     $db = get_db();
 
+    echo gettype($consultType);
+
     try
     {
         $query = 'INSERT INTO Consultations(firstName, lastName, email, consult_type, date, time) VALUES(:firstName, :lastName, :email, :consultType, :date, :time)';
