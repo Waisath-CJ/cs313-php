@@ -70,12 +70,6 @@
                         </select>
                     </div>
                 </div>
-                <div class="form-row">
-                    <div class="input-group">
-                        <label>Additional Comments:&nbsp;</label>
-                        <textarea class="form-control" name="comments"></textarea>
-                    </div>
-                </div>
                 <button type="submit" class="btn btn-outline-dark btn-block">Submit</button>
             </form>
         </div>
