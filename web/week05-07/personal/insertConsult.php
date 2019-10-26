@@ -2,7 +2,6 @@
     $firstName = $_POST['firstName'];
     $lastName = $_POST['lastName'];
     $email = $_POST['email'];
-    $phoneNumber = $_POST['phoneNumber'];
     $consultType = $_POST['consultType'];
     $date = $_POST['date'];
     $time = $_POST['time'];
@@ -17,10 +16,9 @@
         $statement->bindValue(':firstName', $firstName, PDO::PARAM_STR);
         $statement->bindValue(':lastName', $lastName, PDO::PARAM_STR);
         $statement->bindValue(':email', $email, PDO::PARAM_STR);
-        $statement->bindValue(':phoneNumber', $phoneNumber, PDO::PARAM_INT);
-        $statement->bindValue(':consult_type', $consultType, PDO::PARAM_INT);
-        $statement->bindValue(':date', $date, PDO::PARAM_STR);
-        $statement->bindValue(':time', $time, PDO::PARAM_STR);
+        $statement->bindValue(':consult_type', $consultType);
+        $statement->bindValue(':date', $date);
+        $statement->bindValue(':time', $time);
         $statement->execute();
     }
     catch (Exception $ex)
