@@ -20,6 +20,7 @@ CREATE TABLE Consultations (
 	consult_type int REFERENCES BakedGoods(id),
 	date DATE NOT NULL,
 	time TEXT NOT NULL
+	comments varchar
 );
 
 INSERT INTO BakedGoods(name) VALUES ('Cookies'), ('Brownies'), ('Cupcakes'), ('Cakes'), ('Pies'); 
