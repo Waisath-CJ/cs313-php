@@ -18,7 +18,7 @@
             <?php require('header.php'); ?>
             <h1 class="display-3 text-center">Get your own Baked Delights!</h3>
             <p class="text-muted text-center">Schedule your consultation today so you can get your own delicions Baked Delights!</p>
-            <form action="insertConsult.php" method="POST">
+        <form action="insertConsult.php" method="POST">
                 <div class="form-row">
                     <div class="form-group col-md-6">
                         <label for="firstName">First Name</label>
