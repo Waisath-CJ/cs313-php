@@ -11,7 +11,7 @@
 
     try
     {
-        $query = 'INSERT INTO Consultations(firstName, lastName, email, phoneNumber, consult_type, date, time) VALUES(:firstName, :lastName, :email, :phoneNumber, :consultType, :date, :time)';
+        $query = 'INSERT INTO Consultations(firstName, lastName, email, consult_type, date, time) VALUES(:firstName, :lastName, :email, :consultType, :date, :time)';
         $statement = $db->prepare($query);
         $statement->bindValue(':firstName', $firstName, PDO::PARAM_STR);
         $statement->bindValue(':lastName', $lastName, PDO::PARAM_STR);
