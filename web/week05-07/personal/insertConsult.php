@@ -29,6 +29,8 @@
         die();
     }
 
+    echo $statement;
+
     header("Location: confirmation.php?consultId=$statement");
     die();
 ?>
