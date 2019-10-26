@@ -16,7 +16,7 @@
         $statement->bindValue(':firstName', $firstName, PDO::PARAM_STR);
         $statement->bindValue(':lastName', $lastName, PDO::PARAM_STR);
         $statement->bindValue(':email', $email, PDO::PARAM_STR);
-        $statement->bindValue(':consult_type', $consultType);
+        $statement->bindValue(':consult_type', $consultType, PDO::PARAM_INT);
         $statement->bindValue(':date', $date);
         $statement->bindValue(':time', $time);
         $statement->execute();
