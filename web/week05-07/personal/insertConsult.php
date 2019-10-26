@@ -13,7 +13,7 @@
 
     try
     {
-        $query = 'INSERT INTO Consultations(firstName, lastName, email, consult_type, date, time) VALUES(:firstName, :lastName, :email, :consultType, :date, :time)';
+        $query = 'INSERT INTO Consultations(firstName, lastName, email, consult_type, date, time) VALUES(:firstName, :lastName, :email, :consultType, :date, :time) RETURNING id';
         $statement = $db->prepare($query);
         $statement->bindValue(':firstName', $firstName, PDO::PARAM_STR);
         $statement->bindValue(':lastName', $lastName, PDO::PARAM_STR);
@@ -29,6 +29,6 @@
         die();
     }
 
-    header("Location: confirmation.php");
+    header("Location: confirmation.php?consultId=$statement");
     die();
 ?>
