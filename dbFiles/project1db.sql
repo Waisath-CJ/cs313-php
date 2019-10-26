@@ -19,8 +19,7 @@ CREATE TABLE Consultations (
 	phone bigint NOT NULL,
 	consult_type int REFERENCES BakedGoods(id),
 	date DATE NOT NULL,
-	time TEXT NOT NULL,
-	comments varchar
+	time TEXT NOT NULL
 );
 
 INSERT INTO BakedGoods(name) VALUES ('Cookies'), ('Brownies'), ('Cupcakes'), ('Cakes'), ('Pies'); 
