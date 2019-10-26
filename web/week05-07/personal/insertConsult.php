@@ -2,7 +2,7 @@
     $firstName = $_POST['firstName'];
     $lastName = $_POST['lastName'];
     $email = $_POST['email'];
-    $consultType = $_POST['consultType'];
+    $consultType = (int) $_POST['consultType'];
     $date = $_POST['date'];
     $time = $_POST['time'];
 
