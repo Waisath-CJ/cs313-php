@@ -19,8 +19,8 @@
         $statement->bindValue(':email', $email, PDO::PARAM_STR);
         $statement->bindValue(':phoneNumber', $phoneNumber, PDO::PARAM_BIGINT);
         $statement->bindValue(':consult_type', $consultType, PDO::PARAM_INT);
-        $statement->bindValue(':date', $date, PDO::PARAM_DATE);
-        $statement->bindValue(':time', $time, PDO::PARAM_TEXT);
+        $statement->bindValue(':date', $date, PDO::PARAM_STR);
+        $statement->bindValue(':time', $time, PDO::PARAM_STR);
         $statement->execute();
     }
     catch (Exception $ex)
