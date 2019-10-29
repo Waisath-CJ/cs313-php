@@ -12,25 +12,37 @@
 ​
 	$username = $_POST['username'];
 	$password = $_POST['pwd'];
-	$confirmPassword = $_POST['cpwd'];
+    $confirmPassword = $_POST['cpwd'];
+    
+    echo $username . " - " . $password . " - " . $confirmPassword . "<br>";
 ​
 	if ($password != "" && $confirmPassword != "" && $username != "")
-	{
+	{   
+        echo "Made it into the first conditional<br>";
 		if ($password != $confirmPassword)
-		{
+		{   
 			sendErrorMessage();
-		}
+        }
+        
+        echo "Made it past the second conditional<br>";
 ​
 		$hash = password_hash($password);
+​       
+        echo "Hashed password<br>";
+
+        $sql = 'INSERT INTO People (username, password) VALUES(:username, :password)';
+        echo "Created query<br>";
+        $stmt = $db->prepare($sql);
+        echo "DB Prepared Successfully<br>";
+        $stmt->bindValue(':username', $username, PDO::PARAM_STR);
+        echo "Bound username<br>";
+        $stmt->bindValue(':password', $hash, PDO::PARAM_STR);
+        echo "Bound password<br>";
+        $stmt->execute();
+        echo "Executed query<br>"
 ​
-		$sql = 'INSERT INTO People (username, password) VALUES(:username, :password)';
-		$stmt = $db->prepare($sql);
-		$stmt->bindValue(':username', $username, PDO::PARAM_STR);
-		$stmt->bindValue(':password', $hash, PDO::PARAM_STR);
-		$stmt->execute();
-​
-		header("Location: sign-in.php");
-		die();
+		//header("Location: sign-in.php");
+		//die();
 	}
 	else 
 	{
