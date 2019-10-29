@@ -1,7 +1,7 @@
 <?php
 	session_start();
 ​
-	require "dbConnect.php";
+    require ('dbConnect.php');
 	$db = get_db();
 ​
 	function sendErrorMessage() {
