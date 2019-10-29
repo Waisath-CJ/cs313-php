@@ -21,26 +21,28 @@
     <title>Sign-Up</title>
   </head>
   <body>
-	<h1>Sign-Up</h1>
-	<?php 
-		if (isset($message)){
-			echo "<div>$message</div>";
-		}
-	?>
-	<form action="createAccount.php" method="post">
-	  <div class="form-group">
-		<label for="username">Username:</label>
-		<input type="text" class="form-control" id="username" name="username">
-	  </div>
-	  <div class="form-group">
-		<label for="pwd">Password:</label>
-		<input type="password" class="form-control" id="pwd" name="pwd">
-	  </div>
-	  <div class="form-group">
-		<label for="pwd">Confirm Password:</label>
-		<input type="password" class="form-control" id="cpwd" name="cpwd">
-	  </div>
-	  <button type="submit" class="btn btn-default">Submit</button>
-	</form>
+	<div class="container">
+        <h1>Sign-Up</h1>
+        <?php 
+            if (isset($message)){
+                echo "<div>$message</div>";
+            }
+        ?>
+        <form action="createAccount.php" method="post">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" class="form-control" id="username" name="username">
+            </div>
+            <div class="form-group">
+                <label for="pwd">Password:</label>
+                <input type="password" class="form-control" id="pwd" name="pwd">
+            </div>
+            <div class="form-group">
+                <label for="pwd">Confirm Password:</label>
+                <input type="password" class="form-control" id="cpwd" name="cpwd">
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+    </div>
   </body>
 </html>
