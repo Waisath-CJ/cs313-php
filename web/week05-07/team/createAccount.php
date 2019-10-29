@@ -14,12 +14,28 @@
         header("Location: sign_up.php?message=$message");
         die();
     }
+    else {
+        if ($pwd != $cpwd) {
+            $message = "Passwords do not match!";
+            header("Location: sign_up.php?message=$message");
+            die();
+        }
 
-    if ($pwd != $cpwd) {
-        $message = "Passwords do not match!";
-        header("Location: sign_up.php?message=$message");
-        die();
+        $hash = password_hash($pwd);
+
+        try 
+        {
+            $query = 'INSERT INTO People (username, password) VALUES (:username, :password)';
+            $stmt = $db->prepare($query);
+            $stmt->bindValue(':username', $username, PDO::PARAM_STR);
+            $stmt->bindValue(':password', $hash, PDO::PARAM_STR);
+            $stmt->execute();
+        }
+        catch (Exception $ex)
+        {
+            echo "Error with DB. Details: $ex";
+            die();
+        }
     }
-
 
 ?>
