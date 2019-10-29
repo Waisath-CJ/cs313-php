@@ -1,6 +1,6 @@
-DROP TABLE Users;
+DROP TABLE People;
 
-CREATE TABLE Users (
+CREATE TABLE People (
     id SERIAL PRIMARY KEY,
     username varchar NOT NULL,
     password varchar NOT NULL
