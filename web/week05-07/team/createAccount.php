@@ -1,16 +1,7 @@
 <?php
-	//require("dbConnect.php");
-	//$db = get_db();
+	require("dbConnect.php");
+	$db = get_db();
 ​
-    $username = $_POST['username'];
-    $pwd = $_POST['pwd'];
-    $cpwd = $_POST['cpwd'];
-
-    echo $username;
-    echo $pwd;
-    echo $cpwd;
-
-/*
     function sendErrorMessage() {
 		$message = "Invalid input or passwords don't match.";
 ​
@@ -39,23 +30,31 @@
 ​       
         echo "Hashed password<br>";
 
-        $sql = 'INSERT INTO People (username, password) VALUES(:username, :password)';
-        echo "Created query<br>";
-        $stmt = $db->prepare($sql);
-        echo "DB Prepared Successfully<br>";
-        $stmt->bindValue(':username', $username, PDO::PARAM_STR);
-        echo "Bound username<br>";
-        $stmt->bindValue(':password', $hash, PDO::PARAM_STR);
-        echo "Bound password<br>";
-        $stmt->execute();
-        echo "Executed query<br>"
+        try
+        {
+            $sql = 'INSERT INTO People (username, password) VALUES(:username, :password)';
+            echo "Created query<br>";
+            $stmt = $db->prepare($sql);
+            echo "DB Prepared Successfully<br>";
+            $stmt->bindValue(':username', $username, PDO::PARAM_STR);
+            echo "Bound username<br>";
+            $stmt->bindValue(':password', $hash, PDO::PARAM_STR);
+            echo "Bound password<br>";
+            $stmt->execute();
+            echo "Executed query<br>"
+        }
+        catch (Exception $ex)
+        {
+            echo "Error with DB. Details: $ex";
+            die();
+        }
 ​
-		//header("Location: sign-in.php");
-		//die();
+		header("Location: sign-in.php");
+		die();
 	}
 	else 
 	{
 		sendErrorMessage();
 	}
-*/
+
 ?>
