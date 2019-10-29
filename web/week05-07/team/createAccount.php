@@ -2,7 +2,16 @@
 	require("dbConnect.php");
 	$db = get_db();
 ​
-	function sendErrorMessage() {
+    $username = $_POST['username'];
+    $pwd = $_POST['pwd'];
+    $cpwd = $_POST['cpwd'];
+
+    echo $username . "<br>";
+    echo $pwd . "<br>";
+    echo $cpwd . "<br>";
+
+/*
+    function sendErrorMessage() {
 		$message = "Invalid input or passwords don't match.";
 ​
 		//Error "Invalid username or password."
@@ -48,4 +57,5 @@
 	{
 		sendErrorMessage();
 	}
+*/
 ?>
