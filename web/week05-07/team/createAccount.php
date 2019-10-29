@@ -1,6 +1,6 @@
 <?php
-	require("dbConnect.php");
-	$db = get_db();
+	//require("dbConnect.php");
+	//$db = get_db();
 ​
     $username = $_POST['username'];
     $pwd = $_POST['pwd'];
