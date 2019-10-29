@@ -15,7 +15,7 @@
                 echo "<div>$message</div>";
             }
         ?>
-        <form action="createAccount.php" method="GET">
+        <form action="createAccount.php" method="POST">
             <div class="form-group">
                 <label for="username">Username:</label>
                 <input type="text" class="form-control" id="username" name="username">

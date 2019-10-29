@@ -4,6 +4,6 @@
     
     echo "Hello";
 
-    $username = $_GET['username'];
+    $username = $_POST['username'];
     echo $username;
 ?>
