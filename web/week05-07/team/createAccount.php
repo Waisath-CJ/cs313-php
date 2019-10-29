@@ -5,4 +5,5 @@
     echo "Hello";
 
     $username = $_GET['username'];
+    echo $username;
 ?>
