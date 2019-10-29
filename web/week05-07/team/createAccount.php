@@ -9,7 +9,7 @@
     $cpwd = $_POST['cpwd'];
     echo $cpwd;
 
-    if (!isset($username) || !isset($pwd) || !isset($cpwd)) {
+    if ($username == "" || $pwd == "" $cpwd == "") {
         $message = "Invalid inputs";
         header("Location: sign_up.php?message=$message");
         die();
