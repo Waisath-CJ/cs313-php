@@ -25,7 +25,7 @@
                 <input type="password" class="form-control" id="pwd" name="pwd">
             </div>
             <div class="form-group">
-                <label for="pwd">Confirm Password:</label>
+                <label for="cpwd">Confirm Password:</label>
                 <input type="password" class="form-control" id="cpwd" name="cpwd">
             </div>
             <button type="submit" class="btn btn-default">Submit</button>
