@@ -1,17 +1,46 @@
-<!doctype html>
+<?php 
+	session_start();
+​
+	if (isset($_SESSION['userId']))
+	{
+		header("Location: welcome.php");
+		die();
+	}
+​
+	$message = $_GET['message'];
+?>
+​
+<!DOCTYPE html>
+​
 <html>
-    <head>
-        <title>Team Activity 07</title>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    </head>
-
-    <body>
-        <div class="container">
-            
-        </div>
-    </body>
+  <head>
+    <meta charset="UTF-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <title>Sign-Up</title>
+  </head>
+  <body>
+	<h1>Sign-Up</h1>
+	<?php 
+		if (isset($message)){
+			echo "<div>$message</div>";
+		}
+	?>
+	<form action="createAccount.php" method="post">
+	  <div class="form-group">
+		<label for="username">Username:</label>
+		<input type="text" class="form-control" id="username" name="username">
+	  </div>
+	  <div class="form-group">
+		<label for="pwd">Password:</label>
+		<input type="password" class="form-control" id="pwd" name="pwd">
+	  </div>
+	  <div class="form-group">
+		<label for="pwd">Confirm Password:</label>
+		<input type="password" class="form-control" id="cpwd" name="cpwd">
+	  </div>
+	  <button type="submit" class="btn btn-default">Submit</button>
+	</form>
+  </body>
 </html>
