@@ -10,7 +10,8 @@
   <body>
 	<div class="container">
         <h1>Sign-Up</h1>
-        <?php 
+        <?php
+            $message = $_GET['message']; 
             if (isset($message)){
                 echo "<div>$message</div>";
             }
