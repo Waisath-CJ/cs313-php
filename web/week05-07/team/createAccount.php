@@ -9,12 +9,6 @@
     $cpwd = $_POST['cpwd'];
     echo $cpwd;
 
-    if ($username == "" || $pwd == "" $cpwd == "") {
-        $message = "Invalid inputs";
-        header("Location: sign_up.php?message=$message");
-        die();
-    }
-
     if ($pwd != $cpwd) {
         $message = "Passwords do not match!";
         header("Location: sign_up.php?message=$message");
