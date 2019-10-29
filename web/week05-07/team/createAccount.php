@@ -6,9 +6,9 @@
     $pwd = $_POST['pwd'];
     $cpwd = $_POST['cpwd'];
 
-    echo $username . "<br>";
-    echo $pwd . "<br>";
-    echo $cpwd . "<br>";
+    echo $username;
+    echo $pwd;
+    echo $cpwd;
 
 /*
     function sendErrorMessage() {
