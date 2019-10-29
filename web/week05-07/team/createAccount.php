@@ -14,7 +14,7 @@
 	$password = $_POST['pwd'];
 	$confirmPassword = $_POST['cpwd'];
 ​
-	if (isset($password) && $password != "" && isset($confirmPassword) && $confirmPassword != "" && isset($username) && $username != "")
+	if ($password != "" && $confirmPassword != "" && $username != "")
 	{
 		if ($password != $confirmPassword)
 		{
