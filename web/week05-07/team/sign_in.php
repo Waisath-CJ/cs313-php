@@ -8,24 +8,26 @@
         <title>Sign-In</title>
     </head>
     <body>
-        <h1>Sign-In</h1>
-        <?php 
-            if (isset($message)){
-                echo "<div>$message</div>";
-            }
-        ?>
-        <form action="login.php" method="post">
-        <div class="form-group">
-            <label for="username">Username:</label>
-            <input type="text" class="form-control" id="username" name="username">
+        <div class="container">
+            <h1>Sign-In</h1>
+            <?php 
+                if (isset($message)){
+                    echo "<div>$message</div>";
+                }
+            ?>
+            <form action="login.php" method="post">
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" class="form-control" id="username" name="username">
+                </div>
+                <div class="form-group">
+                    <label for="pwd">Password:</label>
+                    <input type="password" class="form-control" id="pwd" name="pwd">
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+            <br><br>
+            <div>Don't have an account? <a href="sign_up.php">Sign Up</a></div>
         </div>
-        <div class="form-group">
-            <label for="pwd">Password:</label>
-            <input type="password" class="form-control" id="pwd" name="pwd">
-        </div>
-        <button type="submit" class="btn btn-default">Submit</button>
-        </form>
-        <br/><br/>
-        <div>Don't have an account? <a href="sign-up.php">Sign Up</a></div>
     </body>
 </html>
