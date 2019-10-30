@@ -18,8 +18,7 @@
             die();
         }
 
-        try
-        {
+        try {
             $query = 'SELECT username FROM People';
             $stmt = $db->prepare($query);
             $stmt->execute();
@@ -31,27 +30,27 @@
                 }
             }
         }
-        catch (Exception $ex)
-        {
+        catch (Exception $ex) {
             echo "Error with DB. Details: $ex";
             die();
         }
 
         $hash = password_hash($pwd, 1);
 
-        try 
-        {
+        try {
             $query = 'INSERT INTO People (username, password) VALUES (:username, :password)';
             $stmt = $db->prepare($query);
             $stmt->bindValue(':username', $username, PDO::PARAM_STR);
             $stmt->bindValue(':password', $hash, PDO::PARAM_STR);
             $stmt->execute();
         }
-        catch (Exception $ex)
-        {
+        catch (Exception $ex) {
             echo "Error with DB. Details: $ex";
             die();
         }
+
+        header("Location: sign_in.php");
+        die();
     }
 
 ?>
