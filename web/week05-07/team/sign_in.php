@@ -11,11 +11,12 @@
         <div class="container">
             <h1>Sign-In</h1>
             <?php 
+                $message = $_GET['message'];
                 if (isset($message)){
                     echo "<div>$message</div>";
                 }
             ?>
-            <form action="login.php" method="post">
+            <form action="login.php" method="POST">
                 <div class="form-group">
                     <label for="username">Username:</label>
                     <input type="text" class="form-control" id="username" name="username">

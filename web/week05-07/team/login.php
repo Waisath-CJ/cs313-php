@@ -4,40 +4,31 @@
     require("dbConnect.php");
 	$db = get_db();
 ​
-	function sendErrorMessage() {
-		$message = "Invalid username or password.";
-​
-		//Error "Invalid username or password."
-		header("Location: sign-in.php?message=$message");
-		die();
-	}
-​
-	$username = htmlspecialchars($_POST['username']);
+	$username = $_POST['username'];
 	$password = $_POST['pwd'];
 ​
-	if (isset($password) && $password != "" && isset($username) && $username != "")
-	{
-		$sql = 'SELECT id, username, password FROM People WHERE username = :username';
-		$stmt = $db->prepare($sql);
-		$stmt->bindValue(':username', $username, PDO::PARAM_STR);
-		$stmt->execute();
-​
-		$row = $apartmentStmt->fetch(PDO::FETCH_ASSOC);
-​
-		if (isset($row) && password_verify($password, $row['password']))
-		{
-			$_SESSION['userId'] = $row['id'];
-​
-			header("Location: welcome.php");
-			die();
-		}
-		else 
-		{
-			sendErrorMessage();
-		}
-	}
-	else 
-	{
-		sendErrorMessage();
-	}
+	if (empty($username) || empty($password)) {
+        $message = "Missing fields!";
+        header("Location: sign_in.php?message=$message");
+        die();
+    }
+
+    try {
+        $query = 'SELECT username FROM People';
+        $stmt = $db->prepare($query);
+        $stmt->execute();
+        while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+            if ($username == $row['username']) {
+                $message = "Username or password incorrect";
+                header("Location: sign_in.php?message=$message");
+                die();
+            }
+        }
+    }
+    catch (Exception $ex) {
+        echo "Error with DB. Details: $ex";
+        die();
+    }
+
+    
 ?>
