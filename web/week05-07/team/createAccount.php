@@ -3,11 +3,8 @@
     $db = get_db();
     
     $username = $_POST['username'];
-    echo $username;
     $pwd = $_POST['pwd'];
-    echo $pwd;
     $cpwd = $_POST['cpwd'];
-    echo $cpwd;
 
     if (empty($username) || empty($pwd) || empty($cpwd)) {
         $message = "Please fill missing fields!";
@@ -18,6 +15,25 @@
         if ($pwd != $cpwd) {
             $message = "Passwords do not match!";
             header("Location: sign_up.php?message=$message");
+            die();
+        }
+
+        try
+        {
+            $query = 'SELECT username FROM People';
+            $stmt = $db->prepare($query);
+            $stmt->execute();
+            while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+                if ($username == $row) {
+                    $message = "Username already taken. Please choose another!";
+                    header("Location: sign_up.php?message=$message");
+                    die();
+                }
+            }
+        }
+        catch (Exception $ex)
+        {
+            echo "Error with DB. Details: $ex";
             die();
         }
 
