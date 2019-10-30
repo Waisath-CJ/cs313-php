@@ -21,7 +21,7 @@
             die();
         }
 
-        $hash = password_hash($pwd, 0);
+        $hash = password_hash($pwd, 1);
         echo $hash;
 
         /* try 
