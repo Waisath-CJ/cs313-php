@@ -1,13 +1,11 @@
 <?php
-	session_start();
-​
     require("dbConnect.php");
 	$db = get_db();
 ​
 	$username = $_POST['username'];
-	$password = $_POST['pwd'];
+	$pwd = $_POST['pwd'];
 ​
-	if (empty($username) || empty($password)) {
+	if (empty($username) || empty($pwd)) {
         $message = "Missing fields!";
         header("Location: sign_in.php?message=$message");
         die();
@@ -30,5 +28,5 @@
         die();
     }
 
-    
+
 ?>
