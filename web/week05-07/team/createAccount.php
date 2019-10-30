@@ -22,9 +22,8 @@
         }
 
         $hash = password_hash($pwd, 1);
-        echo $hash;
 
-        /* try 
+        try 
         {
             $query = 'INSERT INTO People (username, password) VALUES (:username, :password)';
             $stmt = $db->prepare($query);
@@ -36,7 +35,7 @@
         {
             echo "Error with DB. Details: $ex";
             die();
-        } */
+        }
     }
 
 ?>
