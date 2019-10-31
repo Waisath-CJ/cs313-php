@@ -12,9 +12,9 @@
     <body>
         <div class="container">
             <?php require('header.php'); ?>
-            <img src="pics/header.jpg" class="rounded mx-auto d-block" alt="Chocolate Chip Cookies">
             <h1 class="display-3 text-center">Welcome to Whit's Baked Delights!</h1>
             <p class="text-muted text-center">We have some of the best baked goods in Virginia! Using only the best ingredients, our baked delights are always ready for any occasion.</p> 
+            <img src="pics/header.jpg" class="rounded mx-auto d-block" alt="Chocolate Chip Cookies">
         </div>
     </body>
 </html>
