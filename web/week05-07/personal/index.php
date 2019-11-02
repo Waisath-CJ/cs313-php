@@ -11,7 +11,20 @@
 
     <body>
         <div class="container">
-            <?php require('header.php'); ?>
+            <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #FF98E3;">
+                <a class="navbar-brand" href="index.php">Whit's Baked Delights</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link active" href="index.php">Home</a>
+                        <a class="nav-item nav-link" href="delights.php">Baked Delights</a>
+                        <a class="nav-item nav-link" href="consult.php">Schedule a Consultation</a>
+                        <a class="nav-item nav-link" href="about.php">About</a>
+                    </div>
+                </div>
+            </nav>
             <h1 class="display-3 text-center">Welcome to Whit's Baked Delights!</h1>
             <p class="text-muted text-center">We have some of the best baked goods in Virginia! Using only the best ingredients, our baked delights are always ready for any occasion.</p> 
             <img src="pics/header.jpg" class="rounded mx-auto d-block" alt="Chocolate Chip Cookies">
