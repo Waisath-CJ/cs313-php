@@ -1,5 +1,6 @@
 <?php
     session_start();
+    $_SESSION['userId'] = "1";
 ?>
 <!doctype html>
 <html>
