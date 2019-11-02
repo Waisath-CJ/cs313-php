@@ -41,7 +41,7 @@
                     </span>
                 </div>
             </nav>
-            <h1 class="display-3 text-center">Get your own Baked Delights!</h3>
+            <h1 class="display-3 text-center">Get your own Baked Delights!</h1>
             <p class="text-muted text-center">Schedule your consultation today so you can get your own delicions Baked Delights!</p>
             <form action="insertConsult.php" method="POST">
                 <div class="form-row">
