@@ -86,7 +86,15 @@
             ?>
             <br>
             <p class="h4 text-center">Looking to buy some?</p>
-            <button type="button" class="btn btn-outline-dark btn-block" onclick="window.location.href='consult.php'">Schedule a Consultation</button>
+            <button type="button" class="btn btn-outline-dark btn-block" 
+            <?php
+                if (isset($_SESSION['userId'])) {
+                    echo 'onclick="window.location.href=\'consult.php\'"';
+                } else {
+                    echo 'onclick="window.location.href=\'login.php\'"';
+                }
+            ?>
+            >Schedule a Consultation</button>
         </div>
     </body>
 </html>
