@@ -26,7 +26,11 @@
                     <div class="navbar-nav">
                         <a class="nav-item nav-link" href="index.php">Home</a>
                         <a class="nav-item nav-link active" href="delights.php">Baked Delights</a>
-                        <a class="nav-item nav-link" href="consult.php">Schedule a Consultation</a>
+                        <?php
+                            if (isset($_SESSION['userId'])) {
+                                echo '<a class="nav-item nav-link" href="consult.php">Schedule a Consultation</a>';
+                            }
+                        ?>
                         <a class="nav-item nav-link" href="about.php">About</a>
                     </div>
                     <span class="navbar-text">

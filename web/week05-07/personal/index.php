@@ -1,6 +1,5 @@
 <?php
     session_start();
-    $_SESSION['userId'] = "1";
 ?>
 <!doctype html>
 <html>
@@ -24,7 +23,11 @@
                     <div class="navbar-nav">
                         <a class="nav-item nav-link active" href="index.php">Home</a>
                         <a class="nav-item nav-link" href="delights.php">Baked Delights</a>
-                        <a class="nav-item nav-link" href="consult.php">Schedule a Consultation</a>
+                        <?php
+                            if (isset($_SESSION['userId'])) {
+                                echo '<a class="nav-item nav-link" href="consult.php">Schedule a Consultation</a>';
+                            }
+                        ?>
                         <a class="nav-item nav-link" href="about.php">About</a>
                     </div>
                     <span class="navbar-text">
