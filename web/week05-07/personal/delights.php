@@ -29,6 +29,15 @@
                         <a class="nav-item nav-link" href="consult.php">Schedule a Consultation</a>
                         <a class="nav-item nav-link" href="about.php">About</a>
                     </div>
+                    <span class="navbar-text">
+                        <?php 
+                            if (isset($_SESSION['userId'])) {
+                                echo '<a class="nav-item nav-link" href="logout.php">Logout</a>';
+                            } else {
+                                echo '<a class="nav-item nav-link" href="login.php">Login</a>';
+                            }
+                        ?>
+                    </span>
                 </div>
             </nav>
             <h1 class="display-3 text-center">Our Baked Delights</h1>
