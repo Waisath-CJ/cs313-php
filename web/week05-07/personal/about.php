@@ -26,6 +26,7 @@
                         <?php
                             if (isset($_SESSION['userId'])) {
                                 echo '<a class="nav-item nav-link" href="consult.php">Schedule a Consultation</a>';
+                                echo '<a class="nav-item nav-link" href="myConsults.php">My Consultations</a>';
                             }
                         ?>
                         <a class="nav-item nav-link active" href="about.php">About</a>
