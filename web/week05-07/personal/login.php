@@ -42,7 +42,7 @@
                 </div>
             </nav>
             
-            <h1 class="display-3">Login</h1>
+            <h1 class="display-3 text-center">Login</h1>
             <form action="loginHandler.php" method="POST">
                 <div class="form-group">
                     <label for="username">Username:</label>
