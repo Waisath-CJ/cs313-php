@@ -52,10 +52,10 @@
                     <label for="pwd">Password:</label>
                     <input type="password" class="form-control" id="pwd" name="pwd">
                 </div>
-                <button type="submit" class="btn btn-outline-dark btn-block">Submit</button>
+                <button type="submit" class="btn btn-outline-dark btn-block">Login</button>
             </form>
             <br><br>
-            <div>Don't have an account? <a href="sign_up.php">Sign Up</a></div>
+            <div>Don't have an account? <a href="signUp.php">Create an account</a></div>
         </div>
     </body>
 </html>
