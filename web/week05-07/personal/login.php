@@ -1,6 +1,5 @@
 <?php
     $message = $_GET['message'];
-    $messageType = $_GET['type'];
 ?>
 <!doctype html>
 <html>
@@ -45,6 +44,11 @@
             </nav>
             
             <h1 class="display-3 text-center">Login</h1>
+            <?php
+                if (!empty($message)) {
+                    echo "<div style='color: red;'>$message</div>";
+                }
+            ?>
             <form action="loginHandler.php" method="POST">
                 <div class="form-group">
                     <label for="username">Username:</label>
