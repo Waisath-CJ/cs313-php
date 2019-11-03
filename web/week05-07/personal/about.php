@@ -97,7 +97,7 @@
                     <label for="comments">Comments:</label>
                     <textarea class="form-control" id="comments" name="comments"></textarea>
                 </div>
-                <button type="submit" class="btn btn-outline-dark btn-block">Submit</button>
+                <button type="submit" class="btn btn-outline-dark btn-block">Send Message</button>
             </form>
         </div>
     </body>
