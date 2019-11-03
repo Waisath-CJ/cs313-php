@@ -66,6 +66,7 @@
 
             <hr>
             
+            <h1 class="display-3 text-center">Contact Me</h1>
             <?php
                 if (!empty($message)) {
                     echo "<div style='color: red;'>$message</div>";
