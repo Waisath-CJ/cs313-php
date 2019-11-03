@@ -5,7 +5,7 @@
     function errorMessage($type) {
         $message;
 
-        if ($type == 0) {
+        if ($type == 5) {
             $message = "All fields are required!";
         } elseif ($type == 1) {
             $message = "Username is already taken!";
@@ -74,6 +74,6 @@
         header("Location: login.php");
         die();
     } else {
-        errorMessage(0);
+        errorMessage(5);
     }
 ?>
