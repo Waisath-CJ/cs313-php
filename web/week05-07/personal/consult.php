@@ -45,13 +45,18 @@
             <p class="text-muted text-center">Schedule your consultation today so you can get your own delicions Baked Delights!</p>
             <img src="pics/bakedGoods.jpg" class="rounded mx-auto d-block" alt="Assorted Baked Goods"><br>
             <?php 
-                $query = 'SELECT firstName, lastName FROM Customers WHERE id = :id';
-                $stmt = $db->prepare($query);
-                $stmt->bindValue(':id', $_SESSION['userId']);
-                $stmt->execute();
-                $row = $stmt->fetch(PDO::FETCH_ASSOC);
-                echo $_SESSION['userId']."<br>";
-                echo "<b>Requesting a consultation for: ".$row['firstName']." ".$row['lastName']."</b>";
+                try {
+                    $query = 'SELECT firstName, lastName FROM Customers WHERE id = :id';
+                    $stmt = $db->prepare($query);
+                    $stmt->bindValue(':id', $_SESSION['userId']);
+                    $stmt->execute();
+                    $row = $stmt->fetch(PDO::FETCH_ASSOC);
+                    echo $_SESSION['userId']."<br>";
+                    echo "<b>Requesting a consultation for: ".$row['firstName']." ".$row['lastName']."</b>";
+                }
+                catch (Exception $ex) {
+                    echo $ex;
+                }
             ?>
             <form action="insertConsult.php" method="POST">
                 <div class="form-row">
