@@ -43,6 +43,7 @@
             <p class="text-muted text-center">We will reach out to you within the next 48 hours with more information regarding your consultation.</p>
             <img src="pics/pies.jpg" class="rounded mx-auto d-block" alt="Assorted Pies"><br>
             <p class="text-center"><a href="myConsults.php">View My Consultation Requests</a></p>
+            <?php require('footer.php'); ?>
         </div>
     </body>
 </html>

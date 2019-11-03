@@ -62,6 +62,7 @@
             </form>
             <br><br>
             <div>Don't have an account? <a href="signUp.php">Create an account</a></div>
+            <?php require('footer.php'); ?>
         </div>
     </body>
 </html>

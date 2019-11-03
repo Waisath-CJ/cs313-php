@@ -100,6 +100,7 @@
                 </div>
                 <button type="submit" class="btn btn-outline-dark btn-block">Send Message</button>
             </form>
+            <?php require('footer.php'); ?>
         </div>
     </body>
 </html>

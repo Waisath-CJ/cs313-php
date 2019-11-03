@@ -83,6 +83,7 @@
             </form>
             <br><br>
             <div>Already have an account? <a href="login.php">Login</a></div>
+            <?php require('footer.php'); ?>
         </div>
     </body>
 </html>
