@@ -40,7 +40,7 @@
                 </div>
             </nav>
             
-            <h1 class="display-3 text-center">Login</h1>
+            <h1 class="display-3 text-center">Sign Up</h1>
             <form action="createAccount.php" method="POST">
                 <div class="form-row">
                     <div class="form-group col-md-6">
