@@ -52,9 +52,9 @@
                     $stmt->execute();
                     $row = $stmt->fetch(PDO::FETCH_ASSOC);
                     echo $_SESSION['userId']."<br>";
-                    echo $row['firstName']." - First Name<br>";
-                    echo $row['lastName']." - Last Name<br>";
-                    echo "<b>Requesting a consultation for: ".$row['firstName']." ".$row['lastName']."</b>";
+                    echo $row['firstname']." - First Name<br>";
+                    echo $row['lastname']." - Last Name<br>";
+                    echo "<b>Requesting a consultation for: ".$row['firstname']." ".$row['lastname']."</b>";
                 }
                 catch (Exception $ex) {
                     echo $ex;
