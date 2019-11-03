@@ -50,7 +50,7 @@
                     <label for="cpwd">Confirm Password:</label>
                     <input type="password" class="form-control" id="cpwd" name="cpwd">
                 </div>
-                <button type="submit" class="btn btn-outline-dark btn-block">Login</button>
+                <button type="submit" class="btn btn-outline-dark btn-block">Create Account</button>
             </form>
             <br><br>
             <div>Already have an account? <a href="login.php">Login</a></div>
