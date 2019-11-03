@@ -39,9 +39,10 @@
                 </div>
             </nav>
 
-            <h1 class="display-3 text-center">Thank You for your Consultation request!</h1>
+            <h1 class="display-3 text-center">Thank you for your request!</h1>
             <p class="text-muted text-center">We will reach out to you within the next 48 hours with more information regarding your consultation.</p>
             <img src="pics/pies.jpg" class="rounded mx-auto d-block" alt="Assorted Pies"><br>
+            <p class="text-center"><a href="myConsults.php">View My Consultation Requests</a></p>
         </div>
     </body>
 </html>
