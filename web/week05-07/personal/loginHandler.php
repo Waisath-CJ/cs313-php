@@ -33,7 +33,7 @@
             $row = $stmt->fetch(PDO::FETCH_ASSOC);
             
             if ($row && password_verify($pwd, $row['password'])) {
-                $_SESSION['userId'] = $userId;
+                $_SESSION['userId'] = $row['id'];
                 header("Location: index.php");
                 die();
             } else {
