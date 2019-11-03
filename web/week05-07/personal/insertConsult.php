@@ -1,21 +1,18 @@
 <?php
-    $firstName = $_POST['firstName'];
-    $lastName = $_POST['lastName'];
-    $email = $_POST['email'];
+    session_start();
+    
+    require("dbConnect.php");
+    $db = get_db();
+    
     $consultType = (int) $_POST['consultType'];
     $date = $_POST['date'];
     $time = $_POST['time'];
 
-    require("dbConnect.php");
-    $db = get_db();
-
     try
     {
-        $query = 'INSERT INTO Consultations(firstName, lastName, email, consult_type, date, time) VALUES(:firstName, :lastName, :email, :consultType, :date, :time)';
+        $query = 'INSERT INTO Consultations(customer_id, consult_type, date, time) VALUES(:customer_id, :consultType, :date, :time)';
         $statement = $db->prepare($query);
-        $statement->bindValue(':firstName', $firstName, PDO::PARAM_STR);
-        $statement->bindValue(':lastName', $lastName, PDO::PARAM_STR);
-        $statement->bindValue(':email', $email, PDO::PARAM_STR);
+        $statement->bindValue(':customer_id', $_SESSION['userId'], PDO::PARAM_INT);
         $statement->bindValue(':consultType', $consultType, PDO::PARAM_INT);
         $statement->bindValue(':date', $date);
         $statement->bindValue(':time', $time);
