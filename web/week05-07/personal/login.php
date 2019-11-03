@@ -1,5 +1,6 @@
 <?php
-    session_start();
+    $message = $_GET['message'];
+    $messageType = $_GET['type'];
 ?>
 <!doctype html>
 <html>
