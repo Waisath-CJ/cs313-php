@@ -43,6 +43,8 @@
                 </div>
             </nav>
 
+            <h1 class="display-3 text-center">About Me</h1>
+            <img src="pics/me.jpg" class="rounded float-left d-block" alt="Picture of myself">
         </div>
     </body>
 </html>
