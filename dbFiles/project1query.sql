@@ -9,6 +9,11 @@ select * from BakedGoods;
 select * from Flavors;
 
 \echo **********************************
+\echo *********** CUSTOMERS ************
+\echo **********************************
+select * from Customers;
+
+\echo **********************************
 \echo ********* CONSULTATIONS **********
 \echo **********************************
 select * from Consultations;

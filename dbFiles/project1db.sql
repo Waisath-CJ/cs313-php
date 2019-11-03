@@ -1,4 +1,4 @@
-DROP TABLE Consultations, Flavors, BakedGoods;
+DROP TABLE Consultations, Customers, Flavors, BakedGoods;
 
 CREATE TABLE BakedGoods (
 	id SERIAL PRIMARY KEY,
@@ -11,11 +11,18 @@ CREATE TABLE Flavors (
 	flavor varchar NOT NULL
 );
 
-CREATE TABLE Consultations (
+CREATE TABLE Customers (
 	id SERIAL PRIMARY KEY,
 	firstName varchar NOT NULL,
 	lastName varchar NOT NULL,
 	email varchar NOT NULL,
+	username varchar NOT NULL,
+	password varchar NOT NULL
+);
+
+CREATE TABLE Consultations (
+	id SERIAL PRIMARY KEY,
+	customer_id int REFERENCES Customers(id),
 	consult_type int REFERENCES BakedGoods(id),
 	date DATE NOT NULL,
 	time TEXT NOT NULL
@@ -27,7 +34,5 @@ INSERT INTO Flavors(bakedGood_id, flavor) VALUES ('2', 'Chocolate'), ('2', 'Mint
 INSERT INTO Flavors(bakedGood_id, flavor) VALUES ('3', 'Vanilla'), ('3', 'Chocolate'), ('3', 'Red Velvet'), ('3', 'Strawberry Shortcake'), ('3', 'Lemon'), ('3', 'Coconut Creme'), ('3', 'Boston Creme'), ('3', 'Oreo');
 INSERT INTO Flavors(bakedGood_id, flavor) VALUES ('4', 'Vanilla'), ('4', 'Chocolate'), ('4', 'Marble'), ('4', 'Pineapple'), ('4', 'Strawberry'), ('4', 'White Chocolate'), ('4', 'Red Velvet');
 INSERT INTO Flavors(bakedGood_id, flavor) VALUES ('5', 'Apple'), ('5', 'Pumpkin'), ('5', 'Cherry'), ('5', 'Raspberry');
-INSERT INTO Consultations(firstName, lastName, email, consult_type, date, time) VALUES ('CJ', 'Waisath', 'soccerboycj.97@hotmail.com', '3', '2020-05-29', '11:30 AM');
-INSERT INTO Consultations(firstName, lastName, email, consult_type, date, time) VALUES ('CJ', 'Waisath', 'soccerboycj.97@hotmail.com', '5', '2020-05-29', '12:15 PM');
 
 \i project1query.sql
