@@ -49,6 +49,22 @@
             I went to culinary school right out of high school where I developed my skills in baking and eventually found a job at Sassy's Cafe & Bakery in Mesa, AZ where I strengthed those skills.
             I met my husband while I was working there and we moved out to Virginia once we were married. I continue to cook and bake and would love to provide quality Baked Delights for you! 
             Feel free to contact me if you have any questions!</p>
+
+            <div class="card mb-3">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                    <img src="pics/me.jpg" class="card-img" alt="Picture of myself">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <p class="card-text">My name is Whitney Larsen, I'm 24 years old, and I'm from Buena Vista, VA! 
+                I went to culinary school right out of high school where I developed my skills in baking and eventually found a job at Sassy's Cafe & Bakery in Mesa, AZ where I strengthed those skills.
+                I met my husband while I was working there and we moved out to Virginia once we were married. I continue to cook and bake and would love to provide quality Baked Delights for you! 
+                Feel free to contact me if you have any questions!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </body>
 </html>
