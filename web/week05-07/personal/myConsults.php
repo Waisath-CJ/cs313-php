@@ -55,7 +55,6 @@
                 $stmt->execute();
                 while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
                     echo '<tr>';
-                    echo '<td>'.$row['firstname'].' '.$row['lastname'].'</td>';
                     
                     if ($row['consult_type'] == 1) {
                         echo '<td>Cookies</td>';
