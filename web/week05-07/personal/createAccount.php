@@ -34,14 +34,13 @@
 
     if (!empty($firstName) && !empty($lastName) && !empty($email) && !empty($username) && !empty($pwd) && !empty($cpwd)) {
         try {
-            $query = 'SELECT id FROM Customers WHERE username = :username';
+            $query = 'SELECT username FROM Customers';
             $stmt = $db->prepare($query);
-            $stmt->bindValue(':username', $username, PDO::PARAM_STR);
             $stmt->execute();
-
-            $row = $stmt->fetch(PDO::FETCH_ASSOC);
-            if ($row) {
-                errorMessage(1)
+            while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+                if ($username == $row['username']) {
+                    errorMessage(1);
+                }
             }
         }
         catch (Exception $ex) {
