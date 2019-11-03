@@ -16,7 +16,7 @@ CREATE TABLE Customers (
 	firstName varchar NOT NULL,
 	lastName varchar NOT NULL,
 	email varchar NOT NULL,
-	username varchar NOT NULL,
+	username varchar UNIQUE NOT NULL,
 	password varchar NOT NULL
 );
 
