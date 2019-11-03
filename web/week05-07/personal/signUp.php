@@ -51,6 +51,10 @@
                         <label for="lastName">Last Name:</label>
                         <input type="text" class="form-control" id="lastName" name="lastName">
                     </div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="text" class="form-control" name="email" placeholder="Email">
                 </div>               
                 <div class="form-group">
                     <label for="username">Username:</label>
