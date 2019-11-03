@@ -44,7 +44,7 @@
             </nav>
 
             <h1 class="display-3 text-center">About Me</h1>
-            <img src="pics/me.jpg" class="rounded" alt="Picture of myself" style="width: 25%; height: auto;">
+            <img src="pics/me.jpg" class="rounded float-left" alt="Picture of myself" style="width: 25%; height: auto;">
             <p>My name is Whitney Larsen, I'm 24 years old, and I'm from Buena Vista, VA! 
             I went to culinary school right out of high school where I developed my skills in baking and eventually found a job at Sassy's Cafe & Bakery in Mesa, AZ where I strengthed those skills.
             I met my husband while I was working there and we moved out to Virginia once we were married. I continue to cook and bake and would love to provide quality Baked Delights for you! 
