@@ -56,8 +56,12 @@
                     <div class="form-group">
                         <label for="username">Username:</label>
                         <input type="text" class="form-control" id="username" name="username">
+                    </div>
+                    <div class="form-group">
                         <label for="pwd">Password:</label>
                         <input type="password" class="form-control" id="pwd" name="pwd">
+                    </div>
+                    <div class="form-group">
                         <label for="cpwd">Confirm Password:</label>
                         <input type="password" class="form-control" id="cpwd" name="cpwd">
                     </div>
