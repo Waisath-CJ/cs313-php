@@ -24,6 +24,8 @@
         $fullSubject = $firstName.' '.$lastName.' - '.$subject;
         $msg = wordwrap($comments, 100);
         mail($email, $fullSubject, $msg);
+        header("Location: about.php");
+        die();
     } else {
         errorMessage(1);
     }
