@@ -44,15 +44,15 @@
             <h1 class="display-3 text-center">Get your own Baked Delights!</h1>
             <p class="text-muted text-center">Schedule your consultation today so you can get your own delicions Baked Delights!</p>
             <img src="pics/bakedGoods.jpg" class="rounded mx-auto d-block" alt="Assorted Baked Goods">
+            <?php 
+                $query = 'SELECT firstName, lastName FROM Customers WHERE id = :id';
+                $stmt = $db->prepare($query);
+                $stmt->bindValue(':id', $_SESSION['userId']);
+                $stmt->execute();
+                $row = $stmt->fetch(PDO::FETCH_ASSOC);
+                echo "<b>Requesting a consultation for: ".$row['firstName']." ".$row['lastName']."</b>";
+            ?>
             <form action="insertConsult.php" method="POST">
-                <?php 
-                    $query = 'SELECT firstName, lastName FROM Customers WHERE id = :id';
-                    $stmt = $db->prepare($query);
-                    $stmt->bindValue(':id', $_SESSION['userId'], PDO::PARAM_INT);
-                    $stmt->execute();
-                    $row = $stmt->fetch(PDO::FETCH_ASSOC);
-                    echo "<b>Requesting a consultation for: $row['firstName'] $row['lastName']</b>";
-                ?>
                 <div class="form-row">
                     <div class="form-group col-md-4">
                         <label for="consultType">Consultation Type</label>
