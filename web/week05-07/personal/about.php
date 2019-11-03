@@ -1,8 +1,8 @@
 <?php
     session_start();
 
-    $message = $_SESSION['message'];
-    $messageType = $_SESSION['type'];
+    $message = $_GET['message'];
+    $messageType = $_GET['type'];
 ?>
 <!doctype html>
 <html>
