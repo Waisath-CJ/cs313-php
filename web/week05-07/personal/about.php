@@ -1,5 +1,8 @@
 <?php
     session_start();
+
+    $message = $_SESSION['message'];
+    $messageType = $_SESSION['type'];
 ?>
 <!doctype html>
 <html>
@@ -62,6 +65,12 @@
             </div>
 
             <hr>
+            
+            <?php
+                if (!empty($message)) {
+                    echo "<div style='color: red;'>$message</div>";
+                }
+            ?>
 
             <form action="contact.php" method="POST">
                 <div class="form-row">
