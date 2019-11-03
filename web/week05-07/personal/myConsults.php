@@ -46,7 +46,7 @@
             <p class="text-muted text-center">Here are your scheduled consultations:</p><br>
             <?php
                 echo '<table class="table table-striped">';
-                echo '<thead><tr><th scope="col">Name</th><th scope="col">Consult Type</th><th scope="col">Date</th><th scope="col">Time</th></thead>';
+                echo '<thead><tr><th scope="col">Consult Type</th><th scope="col">Date</th><th scope="col">Time</th></tr></thead>';
                 echo '<tbody>';
                 
                 $query = 'SELECT * FROM Consultations WHERE customer_id = :customer_id';
