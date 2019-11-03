@@ -36,7 +36,6 @@
         try {
             $query = 'SELECT username FROM Customers';
             $stmt = $db->prepare($query);
-            $stmt->bindValue(':username', $username, PDO::PARAM_STR);
             $stmt->execute();
             while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
                 if ($username = $row['username']) {
