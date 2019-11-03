@@ -53,7 +53,7 @@
                 <button type="submit" class="btn btn-outline-dark btn-block">Login</button>
             </form>
             <br><br>
-            <div>Don't have an account? <a href="signUp.php">Create an account</a></div>
+            <div>Already have an account? <a href="login.php">Login</a></div>
         </div>
     </body>
 </html>
