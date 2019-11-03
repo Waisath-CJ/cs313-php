@@ -66,10 +66,15 @@
                     echo $ex;
                 }
             ?>
+             <?php
+                if (!empty($message)) {
+                    echo "<div style='color: red;'>$message</div>";
+                }
+            ?>
             <form action="insertConsult.php" method="POST">
                 <div class="form-row">
                     <div class="form-group col-md-4">
-                        <label for="consultType">Consultation Type</label>
+                        <label for="consultType"><?php if($messageType == 1) {echo "<span style='color: red;'>*</span>";} ?>Consultation Type</label>
                         <select name="consultType" class="custom-select">
                             <option selected disabled hidden>Choose a consult type...</option>
                             <option value="1">Cookies</option>
@@ -80,11 +85,11 @@
                         </select>
                     </div>
                     <div class="form-group col-md-4">
-                        <label for="date">Date</label>
+                        <label for="date"><?php if($messageType == 1 || $messageType == 3) {echo "<span style='color: red;'>*</span>";} ?>Date</label>
                         <input type="date" class="form-control" name="date">
                     </div>
                     <div class="form-group col-md-4">
-                        <label for="time">Time</label>
+                        <label for="time"><?php if($messageType == 1 || $messageType == 3) {echo "<span style='color: red;'>*</span>";} ?>Time</label>
                         <select name="time" class="custom-select">
                             <option selected disabled hidden>Choose a time...</option>
                             <option value="10:00 AM">10:00 AM</option>
