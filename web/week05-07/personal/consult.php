@@ -48,7 +48,7 @@
                 try {
                     $query = 'SELECT firstName, lastName FROM Customers WHERE id = :id';
                     $stmt = $db->prepare($query);
-                    $stmt->bindValue(':id', $_SESSION['userId']);
+                    $stmt->bindValue(':id', $_SESSION['userId'], PDO::PARAM_INT);
                     $stmt->execute();
                     $row = $stmt->fetch(PDO::FETCH_ASSOC);
                     echo $_SESSION['userId']."<br>";
