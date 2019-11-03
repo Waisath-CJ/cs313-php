@@ -43,21 +43,16 @@
             </nav>
             <h1 class="display-3 text-center">Get your own Baked Delights!</h1>
             <p class="text-muted text-center">Schedule your consultation today so you can get your own delicions Baked Delights!</p>
+            <img src="pics/bakedGoods.jpg" class="rounded mx-auto d-block" alt="Assorted Baked Goods">
             <form action="insertConsult.php" method="POST">
-                <div class="form-row">
-                    <div class="form-group col-md-6">
-                        <label for="firstName">First Name</label>
-                        <input type="text" class="form-control" name="firstName" placeholder="First Name">
-                    </div>
-                    <div class="form-group col-md-6">
-                        <label for="lastName">Last Name</label>
-                        <input type="text" class="form-control" name="lastName" placeholder="Last Name">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="text" class="form-control" name="email" placeholder="Email">
-                </div>
+                <?php 
+                    $query = 'SELECT firstName, lastName FROM Customers WHERE id = :id';
+                    $stmt = $db->prepare($query);
+                    $stmt->bindValue(':id', $_SESSION['userId'], PDO::PARAM_INT);
+                    $stmt->execute();
+                    $row = $stmt->fetch(PDO::FETCH_ASSOC);
+                    echo "<b>Requesting a consultation for: $row['firstName'] $row['lastName']</b>";
+                ?>
                 <div class="form-row">
                     <div class="form-group col-md-4">
                         <label for="consultType">Consultation Type</label>
