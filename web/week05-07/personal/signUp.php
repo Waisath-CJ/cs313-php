@@ -1,3 +1,7 @@
+<?php
+    $message = $_GET['message'];
+    $messageType = $_GET['type'];
+?>
 <!doctype html>
 <html>
     <head>
@@ -41,32 +45,37 @@
             </nav>
             
             <h1 class="display-3 text-center">Sign Up</h1>
+            <?php
+                if (!empty($message)) {
+                    echo "<div style='color: red;'>$message</div>";
+                }
+            ?>
             <form action="createAccount.php" method="POST">
                 <div class="form-row">
                     <div class="form-group col-md-6">
-                        <label for="firstName">First Name:</label>
+                        <label for="firstName"><?php if($messageType == 0) {echo "<span style='color: red;'>*</span>";} ?>First Name:</label>
                         <input type="text" class="form-control" id="firstName" name="firstName">
                     </div>
                     <div class="form-group col-md-6">
-                        <label for="lastName">Last Name:</label>
+                        <label for="lastName"><?php if($messageType == 0) {echo "<span style='color: red;'>*</span>";} ?>Last Name:</label>
                         <input type="text" class="form-control" id="lastName" name="lastName">
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="email">Email</label>
+                    <label for="email"><?php if($messageType == 0) {echo "<span style='color: red;'>*</span>";} ?>Email</label>
                     <input type="text" class="form-control" id="email" name="email">
                 </div>               
                 <div class="form-group">
-                    <label for="username">Username:</label>
+                    <label for="username"><?php if($messageType == 0 || $messageType == 1) {echo "<span style='color: red;'>*</span>";} ?>Username:</label>
                     <input type="text" class="form-control" id="username" name="username">
                 </div>
                 <div class="form-row">
                     <div class="form-group col-md-6">
-                        <label for="pwd">Password:</label>
+                        <label for="pwd"><?php if($messageType == 0 || $messageType == 2 || $messageType == 3) {echo "<span style='color: red;'>*</span>";} ?>Password:</label>
                         <input type="password" class="form-control" id="pwd" name="pwd">
                     </div>
                     <div class="form-group col-md-6">
-                        <label for="cpwd">Confirm Password:</label>
+                        <label for="cpwd"><?php if($messageType == 0 || $messageType == 2 || $messageType == 3) {echo "<span style='color: red;'>*</span>";} ?>Confirm Password:</label>
                         <input type="password" class="form-control" id="cpwd" name="cpwd">
                     </div>
                 </div>
