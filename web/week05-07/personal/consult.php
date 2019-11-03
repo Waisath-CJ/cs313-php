@@ -1,8 +1,16 @@
 <?php
     session_start();
 
+    if (!isset($_SESSION['userId'])) {
+        header("Location: index.php");
+        die();
+    }
+
 	require("dbConnect.php");
-	$db = get_db();
+    $db = get_db();
+    
+    $message = $_GET['message'];
+    $messageType = $_GET['type'];
 ?>
 <!doctype html>
 <html>
@@ -41,6 +49,7 @@
                     </span>
                 </div>
             </nav>
+
             <h1 class="display-3 text-center">Get your own Baked Delights!</h1>
             <p class="text-muted text-center">Schedule your consultation today so you can get your own delicions Baked Delights!</p>
             <img src="pics/bakedGoods.jpg" class="rounded mx-auto d-block" alt="Assorted Baked Goods"><br>

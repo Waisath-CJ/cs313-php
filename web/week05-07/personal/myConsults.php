@@ -1,6 +1,11 @@
 <?php
     session_start();
 
+    if (!isset($_SESSION['userId'])) {
+        header("Location: index.php");
+        die();
+    }
+
 	require("dbConnect.php");
 	$db = get_db();
 ?>
