@@ -11,7 +11,30 @@
 
     <body>
         <div class="container">
-            <?php require('header.php'); ?>
+            <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #FF98E3;">
+                <a class="navbar-brand" href="index.php">Whit's Baked Delights</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link" href="index.php">Home</a>
+                        <a class="nav-item nav-link" href="delights.php">Baked Delights</a>
+                        <a class="nav-item nav-link" href="consult.php">Schedule a Consultation</a>
+                        <a class="nav-item nav-link" href="myConsults.php">My Consultations</a>
+                        <a class="nav-item nav-link" href="about.php">About</a>
+                    </div>
+                    <span class="navbar-text">
+                        <?php 
+                            if (isset($_SESSION['userId'])) {
+                                echo '<a class="nav-item nav-link" href="logout.php">Logout</a>';
+                            } else {
+                                echo '<a class="nav-item nav-link" href="login.php">Login</a>';
+                            }
+                        ?>
+                    </span>
+                </div>
+            </nav>
 
             <h1 class="display-3 text-center">Thank You for your Consultation request!</h1>
             <p class="text-muted text-center">We will reach out to you within the next 48 hours with more information regarding your consultation.</p>
