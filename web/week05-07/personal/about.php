@@ -60,6 +60,36 @@
                     </div>
                 </div>
             </div>
+
+            <hr>
+
+            <form action="contact.php" method="POST">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="firstName">First Name</label>
+                        <input type="text" class="form-control" id="firstName" name="firstName">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" class="form-control" id="lastName" name="lastName">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="email">Email</label>
+                        <input type="text" class="form-control" id="email" name="email">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="phoneNumber">Subject</label>
+                        <input type="text" class="form-control" id="subject" name="subject">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="comments">Comments:</label>
+                    <textarea class="form-control" id="comments" name="comments"></textarea>
+                </div>
+                <button type="submit" class="btn btn-outline-dark btn-block">Submit</button>
+            </form>
         </div>
     </body>
 </html>
