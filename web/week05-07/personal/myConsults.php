@@ -43,6 +43,38 @@
             </nav>
 
             <h1 class="display-3 text-center">My Consultations</h1>
+            <p class="text-muted text-center">Here are your scheduled consultations:</p><br>
+            <?php
+                echo '<table class="table table-striped">';
+                echo '<thead><tr><th scope="col">Name</th><th scope="col">Consult Type</th><th scope="col">Date</th><th scope="col">Time</th></thead>';
+                echo '<tbody>';
+                
+                $query = 'SELECT * FROM Consultations WHERE customer_id = :customer_id';
+                $stmt = $db->prepare($query);
+                $stmt->bindValue(':customer_id', $_SESSION['userId'], PDO::PARAM_INT);
+                $stmt->execute();
+                while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+                    echo '<tr>';
+                    echo '<td>'.$row['firstname'].' '.$row['lastname'].'</td>';
+                    
+                    if ($row['consult_type'] == 1) {
+                        echo '<td>Cookies</td>';
+                    } elseif ($row['consult_type'] == 2) {
+                        echo '<td>Brownies</td>';
+                    } elseif ($row['consult_type'] == 3) {
+                        echo '<td>Cupcakes</td>';
+                    } elseif ($row['consult_type'] == 4) {
+                        echo '<td>Cakes</td>';
+                    } elseif ($row['consult_type'] == 5) {
+                        echo '<td>Pies</td>';
+                    }
+
+                    echo '<td>'.$row['date'].'</td>';
+                    echo '<td>'.$row['time'].'</td>';
+                    echo '</tr>';
+                }
+                echo '</tbody></table>';
+            ?>
         </div>
     </body>
 </html>
