@@ -44,7 +44,7 @@
             </nav>
 
             <h1 class="display-3 text-center">About Me</h1>
-            <img src="pics/me.jpg" class="rounded float-left d-block" alt="Picture of myself">
+            <img src="pics/me.jpg" class="rounded" alt="Picture of myself" style="width: 25%; height: auto;">
         </div>
     </body>
 </html>
