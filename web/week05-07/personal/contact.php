@@ -18,5 +18,13 @@
     $subject = $_POST['subject'];
     $comments = $_POST['comments'];
 
-    echo $firstName."<br>".$lastName."<br>".$email."<br>".$subject."<br>".$comments;
+    //echo $firstName."<br>".$lastName."<br>".$email."<br>".$subject."<br>".$comments;
+    
+    if (!empty($firstName) && !empty($lastName) && !empty($email) && !empty($subject) && !empty($comments)) {
+        $fullSubject = $firstName.' '.$lastName.' - '.$subject;
+        $msg = wordwrap($comments, 100);
+        mail($email, $fullSubject, $msg);
+    } else {
+        errorMessage(1);
+    }
 ?>
